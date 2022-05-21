@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap');
+
+
+$montserrat: 'Montserrat', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+
+$dark-green: #447019;
+$medium-green: #A5D145;
+$dark-grey: #2A2A2A;
+$yellow: #D9AB23;
+$dirty-white: #F2EFEB;
+$black: #000000;
+$white: #fff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $open-sans;
+}
+
+header {
+    max-width: 1600px;
+    margin: auto;  
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
+section {
+    margin: 1rem;
+
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 0;
+}
+
+article {
+    background-color: $dirty-white;
+    margin: 1.5rem 0.5rem;
+}
+
+#search {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: $open-sans;
+}
+
+h1 {
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-top: 2px solid $white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+h2 {
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid $black;
+    border-top: 2px solid $black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+h3 {
+    padding-top: 0.5rem;
+}
+
+.page-breadcrumbs {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+.one-recipe {
+    background: transparent;
+}
+
+.meal-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-photo {
+    width: 100%;
+}
+
+.ad {
+    max-height: 300px;
+}
+
+.ad-photo {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.border-container {
+    padding: 1rem;
+    border: 2px solid $white;
+}
+
+.recipe-details-wrapper {
+    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0.2rem 0;
+}
+
+.recipe-details-container {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: $dirty-white;
+}
+
+.details-container {
+    padding: 0.7rem;
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+.details-title {
+    font-family: $montserrat;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.details-title2 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.details-text {
+    font-weight: 600;
+}
+
+
+
+.details-box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+    border-top: 2px solid $white;
+
+    p {
+        border-right: 2px solid $white;
+        padding: 1rem 0;
+    }
+
+    p:last-of-type {
+        border: 0px;
+    }
+
+
+    span {
+        display: block;
+    }
+    
+}
+
+.recipe-details-button {
+    width: 100%;
+    padding: 1rem 0;
+    font-family: $montserrat;
+    background-color: $dark-grey;
+    text-transform: uppercase;
+    color: $white;
+}
+
+i {
+    height: 15px;
+    width: 15px;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    display: none;
+    height: 40vh;
+  }
+
+  .mySlides:first-of-type {
+    background-image: url("../photos/header1.jpeg");
+    background-size: cover;
+  }
+
+  .mySlides:nth-of-type(2) {
+    background-image: url("../photos/header2.jpg");
+    background-size: cover;
+  }
+
+  .mySlides:nth-of-type(3) {
+    background-image: url("../photos/header3.jpeg");
+    background-size: cover;
+  }
+  
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.one-ingredient {
+    display: inline;
+}
+
+.ingredient-wrapper {
+    padding: 0.5rem 0;
+}
