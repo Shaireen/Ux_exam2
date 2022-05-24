@@ -6,12 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/3ff77e86fd.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="recipe-subpage">
     <header>
-        <nav></nav>
+        <nav id="navigation" class="topnav">
+            <a href="">Home</a>
+            <a href="">Option 3</a>
+            <a href="">Option 2</a>
+            <a href="">Option 1</a>
+            <div id="icon-wrapper">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                <i class="fa fa-bars"></i>
+                <a class="fas fa-heart"></a>
+				<a class="fas fa-user"></a>
+              </a>
+            </div>
+        </nav>
     </header>
     <main>
+        <aside>
+            <h3>Recently visited</h3>
+            <article class="aside-item">
+                <img src="../photos/pizza.jpeg">
+                <div class="aside-text"> 
+                    <h4>A recipe</h4>
+                    <p>Try out this recipe now this is very cool and stuff</p>
+                </div>
+            </article>
+            <article class="aside-item">
+                <img src="../photos/pizza.jpeg">
+                <div class="aside-text"> 
+                    <h4>A recipe</h4>
+                    <p>Try out this recipe now this is very cool and stuff</p>
+                </div>
+            </article>
+            <article class="aside-item">
+                <img src="../photos/pizza.jpeg">
+                <div class="aside-text"> 
+                    <h4>A recipe</h4>
+                    <p>Try out this recipe now this is very cool and stuff</p>
+                </div>
+            </article>
+        </aside>
+        <div>
         <article class="one-recipe">
             <div class="page-breadcrumbs" >
                 <p>page > page > page > recipe</p>
@@ -19,6 +57,7 @@
             
             <section class="recipe-details-container">
                 <h1>A pizza</h1>
+                <div class="container-wrapper">
                 <div class="recipe-photos">
                     <img src="../photos/pizza.jpeg" class="meal-photo">
                 </div>
@@ -29,32 +68,42 @@
                     <p class="recipe-details-wrapper"><span class="details-title2">Servings: </span><span class="details-text">8</span></p>
                     <p class="recipe-details-wrapper"><span class="details-title2">Cost: </span><span class="details-text">30$</span></p>
                 </div>
+            </div>
             </section>
+            <div class="container-wrapper">
             <section class="recipe-details-container">
                 <h3>Ingredients</h3>
                 <ul>
-                <p class="ingredient-wrapper">
+                <p class="checkbox-wrapper">
                 <input type="checkbox" class="checkbox">
-                <span class="one-ingredient">2 tomatoes</span>
+                <span class="one-item">2 tomatoes</span>
                 </p>
-                <p class="ingredient-wrapper">
+                <p class="checkbox-wrapper">
                 <input type="checkbox" class="checkbox">
-                <span class="one-ingredient">1 cup of flour</span>
+                <span class="one-item">1 cup of flour</span>
                 </p>
-                <p class="ingredient-wrapper">
+                <p class="checkbox-wrapper">
                 <input type="checkbox" class="checkbox">
-                <span class="one-ingredient">1 can of tomato sauce</span>
+                <span class="one-item">1 can of tomato sauce</span>
                 </p>
-                <p class="ingredient-wrapper">
+                <p class="checkbox-wrapper">
                 <input type="checkbox" class="checkbox">
-                <span class="one-ingredient">5 basil leaves</span>
+                <span class="one-item">5 basil leaves</span>
                 </p>
             </ul>
             </section>
             <section class="recipe-details-container">
                 <h3>Preparation</h3>
+                <li>
+                    <ol></ol>
+                    <ol></ol>
+                    <ol></ol>
+                    <ol></ol>
+                    <ol></ol>
+                </li>
             </section>
-        </article>
+        </div>
+        </article>                                                                                                                                                                                                                                                          
         <section>
             <h2>Popular</h2>
             <section class="item-container">
@@ -156,7 +205,9 @@
             </section>
 
         </section>
+    </div>
     </main>
     <footer></footer>
 </body>
+<script src="../javascript/nav.js"></script>
 </html>
