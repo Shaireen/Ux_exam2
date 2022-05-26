@@ -15,6 +15,7 @@ header {
 }
 
 nav {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -29,7 +30,14 @@ nav {
   background-color: #fff;
   top: 0;
   left: 0;
+  justify-content: space-between;
+  align-items: center;
 }
+
+nav li {
+  display: flex;
+}
+
 nav a {
   float: left;
   display: block;
@@ -40,10 +48,27 @@ nav a {
   font-size: 17px;
 }
 
+nav .header-logo {
+  align-self: auto;
+  justify-self: start;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav .header-logo img {
+  width: 160px;
+  height: auto;
+}
 fieldset {
   border: none;
 }
-
+.ads {
+  height: 300px;
+}
+.ads img {
+  object-fit: cover;
+  height: 100%;
+}
 .topnav a:not(:first-child) {
   display: none;
 }
@@ -112,8 +137,9 @@ article {
 }
 .search_area {
   max-width: 450px;
+  min-width: 300px;
   width: 50%;
-  margin: 5rem auto 0;
+  margin: 8rem auto 0;
 }
 
 #search.search-fav {
@@ -442,6 +468,15 @@ i {
   margin: auto;
 }
 
+.li-item {
+  display: none;
+}
+
+.nav-link {
+  display: block !important;
+  padding: 14px 10px;
+}
+
 @media screen and (min-width: 720px) {
   #home-page main,
   #fav-page main,
@@ -450,11 +485,22 @@ i {
     grid-template-columns: 30% 70%;
   }
 
+  .li-item {
+    display: flex;
+  }
+
   .topnav {
     padding: 17px 0;
   }
 
   .topnav#navigation a {
+    float: none;
+    display: inline;
+  }
+
+  .nav-link {
+    display: none;
+
     float: none;
     display: inline;
   }
