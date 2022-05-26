@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <title>Sign up</title>
+    <script
+      src="https://kit.fontawesome.com/3ff77e86fd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="signup-subpage">
+    <header>
+      <nav id="navigation" class="topnav">
+        <a class="header-logo" href="../index.html"
+          ><img src="../photos/logo.png" alt="meal-morale-logo"
+        /></a>
+        <li class="li-item">
+          <ul>
+            <a class="nav-link" href="">Home</a>
+          </ul>
+          <ul>
+            <a class="nav-link" href="">Option 3</a>
+          </ul>
+          <ul>
+            <a class="nav-link" href="">Option 2</a>
+          </ul>
+          <ul>
+            <a class="nav-link" href="">Option 1</a>
+          </ul>
+        </li>
+        <div id="icon-wrapper">
+          <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+            <i class="fa fa-bars"></i>
+            <a class="fas fa-heart"></a>
+            <a class="fas fa-user"></a>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section id="signup-wrapper">
+      <article id="image-wrapper"></article>
+
+      <article id="form-wrapper">
+        <h1>Log in to your account:</h1>
+        <form>
+          <label for="username">User name:</label>
+          <input name="username" type="text" placeholder="Username" />
+          <label for="password">Password:</label>
+          <input name="password" type="password" placeholder="Password" />
+          <p class="log-in">
+            <a class="reset-password">Forgot the password?</a>
+          </p>
+          <button class="signup-btn">Log in</button>
+        </form>
+      </article>
+    </section>
+    <div class="popup-window--background"></div>
+    <article class="popup-window">
+      <h1>Reset password:</h1>
+      <p class="close-box">x</p>
+      <form>
+        <label for="email">Password:</label>
+        <input name="email" type="email" placeholder="E-mail" />
+        <button class="signup-btn">Send password</button>
+      </form>
+    </article>
+  </body>
+  <script src="../javascript/nav.js"></script>
+  <script src="../javascript/reset.js"></script>
+</html>

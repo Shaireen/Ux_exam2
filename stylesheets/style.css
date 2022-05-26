@@ -126,7 +126,7 @@ section {
 
 article {
   background-color: #f2efeb;
-  margin: 1.5rem 0.5rem;
+  margin: 1rem 0.5rem;
 }
 
 #search {
@@ -145,7 +145,30 @@ article {
 #search.search-fav {
   margin-bottom: 0.2rem;
 }
-
+.popup-window {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: #ffff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.popup-window--background {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.609);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.shown {
+  display: block !important;
+}
 h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -241,7 +264,6 @@ aside h3 {
 }
 
 .recipe-details-container {
-  margin: 1rem 0;
   padding: 1rem;
   background-color: #f2efeb;
 }
@@ -393,27 +415,34 @@ i {
   margin: 0;
 }
 #signup-wrapper h1 {
-  color: #fff;
+  color: #000;
   border: none;
 }
 #signup-wrapper #form-wrapper {
-  background-color: transparent;
+  /* background-color: transparent; */
   margin: 0 auto;
   position: relative;
+  padding: 15px 20px 20px;
+  border-radius: 20px;
   top: 30%;
   max-width: 300px;
+  background-color: #ffff;
 }
 #signup-wrapper input {
   display: block;
-  margin: 0.5rem auto;
+  margin: 0 0 1rem 0;
   width: 100%;
   padding: 0.5rem;
   border: 2px solid #000000;
   font-family: "Open Sans", sans-serif;
 }
+#signup-wrapper input:nth-child(4) {
+  margin-bottom: 0;
+}
 #signup-wrapper button {
   width: 100%;
   padding: 1rem 0;
+  margin-top: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   background-color: #a5d145;
@@ -422,9 +451,9 @@ i {
 #signup-wrapper .log-in {
   color: white;
   font-weight: 600;
-  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+  /* text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
     -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
-    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
+    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0); */
 }
 
 #settings-headings a {
@@ -479,12 +508,16 @@ i {
 
 @media screen and (min-width: 720px) {
   #home-page main,
-  #fav-page main,
-  .recipe-subpage main {
+  #fav-page main {
     display: grid;
     grid-template-columns: 30% 70%;
   }
-
+  .recipe-subpage main {
+    display: grid;
+    grid-template-columns: 30% 68%;
+    margin-top: 5rem;
+    justify-content: space-between;
+  }
   .li-item {
     display: flex;
   }
@@ -498,6 +531,9 @@ i {
     display: inline;
   }
 
+  /* label {
+    color: #fff;
+  } */
   .nav-link {
     display: none;
 
@@ -544,7 +580,6 @@ i {
     text-shadow: none;
     color: black;
   }
-
   .aside-item {
     flex-wrap: nowrap;
   }
