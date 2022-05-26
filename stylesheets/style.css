@@ -15,6 +15,7 @@ header {
 }
 
 nav {
+  display: flex;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -29,7 +30,14 @@ nav {
   background-color: #fff;
   top: 0;
   left: 0;
+  justify-content: space-between;
+  align-items: center;
 }
+
+nav li {
+  display: flex;
+}
+
 nav a {
   float: left;
   display: block;
@@ -40,6 +48,27 @@ nav a {
   font-size: 17px;
 }
 
+nav .header-logo {
+  align-self: auto;
+  justify-self: start;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav .header-logo img {
+  width: 160px;
+  height: auto;
+}
+fieldset {
+  border: none;
+}
+.ads {
+  height: 300px;
+}
+.ads img {
+  object-fit: cover;
+  height: 100%;
+}
 .topnav a:not(:first-child) {
   display: none;
 }
@@ -88,14 +117,15 @@ section {
   margin: 1rem;
 }
 
-.item-container, .container-wrapper {
+.item-container,
+.container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin: 0;
 }
 
 article {
-  background-color: #F2EFEB;
+  background-color: #f2efeb;
   margin: 1.5rem 0.5rem;
 }
 
@@ -104,6 +134,16 @@ article {
   padding: 0.5rem;
   font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1.5rem 0;
+}
+.search_area {
+  max-width: 450px;
+  min-width: 300px;
+  width: 50%;
+  margin: 8rem auto 0;
+}
+
+#search.search-fav {
+  margin-bottom: 0.2rem;
 }
 
 h1 {
@@ -134,16 +174,23 @@ aside h3 {
 }
 
 .aside-item {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin: 1rem;
+  width: 60%;
+  display: flex;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .aside-item img {
-  max-height: 80px;
+  width: 100%;
+  min-width: 170px;
+  max-width: 170px;
+  max-height: 80%;
 }
 .aside-item .aside-text {
-  max-width: 100%;
-  padding: 0.4rem;
+  width: 100%;
+  max-width: 150px;
+  padding: 0.2rem 0.2rem 0.2rem 0.8rem;
 }
 .aside-item .aside-text p {
   font-size: 0.9rem;
@@ -196,7 +243,7 @@ aside h3 {
 .recipe-details-container {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: #F2EFEB;
+  background-color: #f2efeb;
 }
 
 .details-container {
@@ -248,7 +295,7 @@ aside h3 {
   width: 100%;
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   text-transform: uppercase;
   color: #fff;
 }
@@ -283,7 +330,8 @@ i {
   background-size: cover;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -305,7 +353,8 @@ i {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -367,13 +416,15 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #A5D145;
+  background-color: #a5d145;
   font-weight: 600;
 }
 #signup-wrapper .log-in {
   color: white;
   font-weight: 600;
-  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
+    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
 }
 
 #settings-headings a {
@@ -409,7 +460,7 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #A5D145;
+  background-color: #a5d145;
   font-weight: 600;
 }
 .settings form {
@@ -417,10 +468,25 @@ i {
   margin: auto;
 }
 
+.li-item {
+  display: none;
+}
+
+.nav-link {
+  display: block !important;
+  padding: 14px 10px;
+}
+
 @media screen and (min-width: 720px) {
-  #home-page main, .recipe-subpage main {
+  #home-page main,
+  #fav-page main,
+  .recipe-subpage main {
     display: grid;
     grid-template-columns: 30% 70%;
+  }
+
+  .li-item {
+    display: flex;
   }
 
   .topnav {
@@ -432,6 +498,13 @@ i {
     display: inline;
   }
 
+  .nav-link {
+    display: none;
+
+    float: none;
+    display: inline;
+  }
+
   .topnav#navigation a.icon {
     display: none;
   }
@@ -439,6 +512,10 @@ i {
   #settings-wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
+  }
+  .aside-item {
+    width: 100%;
+    margin: 1rem;
   }
 }
 @media screen and (min-width: 1048px) {
@@ -468,6 +545,9 @@ i {
     color: black;
   }
 
+  .aside-item {
+    flex-wrap: nowrap;
+  }
   .aside-item img {
     max-height: 180px;
   }
