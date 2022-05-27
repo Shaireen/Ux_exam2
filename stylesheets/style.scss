@@ -20,12 +20,17 @@ $white: #fff;
 
 body {
     font-family: $open-sans;
+    margin: 0 auto 0;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1290px;
 }
 
 header {
     max-width: 1600px;
     margin: auto;  
 }
+
 
 nav {
     font-family: $montserrat;
@@ -55,6 +60,12 @@ nav {
     }
 }
 
+.icons-desktop{
+    display: none;
+  }
+.icons-desktop a:hover{
+    color: #D9AB23;
+}
 
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -139,7 +150,10 @@ h2 {
     text-align: center;
     padding: 5px 0;
 }
-
+h4 {
+    font-family: $montserrat;
+    color: #447019;
+}
 h3 {
     padding-top: 0.5rem;
 }
@@ -296,12 +310,14 @@ i {
 
   .mySlides {
     display: none;
-    height: 40vh;
+    height: 5s0vh;
+    
   }
 
   .mySlides:first-of-type {
     background-image: url("../photos/header1.jpeg");
     background-size: cover;
+    background-position: right;
   }
 
   .mySlides:nth-of-type(2) {
@@ -310,7 +326,7 @@ i {
   }
 
   .mySlides:nth-of-type(3) {
-    background-image: url("../photos/header3.jpeg");
+    background-image: url("../photos/header3.png");
     background-size: cover;
   }
   
@@ -384,7 +400,7 @@ i {
         background-color: transparent;
         margin: 0 auto;
         position: relative;
-        top: 30%;
+        top: 10%;
         max-width: 300px;
 
     }
@@ -468,88 +484,101 @@ i {
 
 // Media queries
 
+
 @media screen and (min-width: 720px) {
-
-
-
-    #home-page main, .recipe-subpage main{
-        display: grid;
-        grid-template-columns: 30% 70%;
+    #home-page main,
+    #fav-page main {
+      display: grid;
+      grid-template-columns: 30% 70%;
     }
-
+    .recipe-subpage main {
+      display: grid;
+      grid-template-columns: 30% 68%;
+      margin-top: 5rem;
+      justify-content: space-between;
+    }
+    .li-item {
+      display: flex;
+    }
+  
     .topnav {
-        padding: 17px 0
+      padding: 17px 0;
     }
-
-    
-        .topnav#navigation a {
-            float: none;
-            display: inline;
-        }
-
+  
+    .topnav#navigation a {
+      float: none;
+      display: inline;
+    }
+    .topnav#navigation a:hover{
+        color: #A5D145;
+    }
+  
+    /* label {
+      color: #fff;
+    } */
+    .nav-link {
+      display: none;
+  
+      float: none;
+      display: inline;
+    }
+  
     .topnav#navigation a.icon {
-        display: none;
+      display: none;
     }
-
-
+  
     #settings-wrapper {
-        display: grid;
-        grid-template-columns: 30% 70%;
+      display: grid;
+      grid-template-columns: 30% 70%;
     }
-
-}
-
-
-@media screen and (min-width: 1048px) {
-    #signup-subpage {
-        max-height: 100vh;
-    }
-    #signup-wrapper {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        background: transparent;
-
-        h1 {
-            color: $black;
-        }
-
-        #image-wrapper {
-            background-image: url("../photos/signup.jpg");
-            background-size: cover;
-            margin: 0;
-        }
-
-
-        #form-wrapper {
-            max-width: 450px;
-            width: 40%;
-        }
-
-        .log-in {
-            text-shadow: none;
-            color: black;
-        }
-
-    }
-
     .aside-item {
-        img {
-            max-height: 180px;
-        }
+      width: 100%;
+      margin: 1rem;
     }
-}
-
-@media screen and (min-width: 1320px) {
-
-
-aside {
-    padding-top: 2rem;
-}
-
-#settings-subpage {
-    footer {
-        position: fixed;
-        bottom: 0;
+  }
+  @media screen and (min-width: 1048px) {
+    #signup-subpage {
+      max-height: 100vh;
     }
-}
-}
+  
+    #signup-wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      background: transparent;
+    }
+    #signup-wrapper h1 {
+      color: #000000;
+    }
+    #signup-wrapper #image-wrapper {
+      background-image: url("../photos/signup.jpg");
+      background-size: cover;
+      margin: 0;
+    }
+    #signup-wrapper #form-wrapper {
+      max-width: 450px;
+      width: 40%;
+    }
+    #signup-wrapper .log-in {
+      text-shadow: none;
+      color: black;
+    }
+    .aside-item {
+      flex-wrap: nowrap;
+    }
+    .aside-item img {
+      max-height: 180px;
+    }
+  }
+  @media screen and (min-width: 1320px) {
+    aside {
+      padding-top: 2rem;
+    }
+  
+    #settings-subpage footer {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
