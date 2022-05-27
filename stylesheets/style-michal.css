@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap");
-
-$montserrat: "Montserrat", sans-serif;
-$open-sans: "Open Sans", sans-serif;
-
-$dark-green: #447019;
-$medium-green: #a5d145;
-$dark-grey: #2a2a2a;
-$yellow: #d9ab23;
-$dirty-white: #f2efeb;
-$black: #000000;
-$white: #fff;
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,11 +6,7 @@ $white: #fff;
 }
 
 body {
-  font-family: $open-sans;
-  margin: 0 auto 0;
-  padding: 0 15px;
-  width: 100%;
-  max-width: 1290px;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -31,7 +15,8 @@ header {
 }
 
 nav {
-  font-family: $montserrat;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   border-bottom: 2px solid #000000;
@@ -42,31 +27,60 @@ nav {
   position: fixed;
   width: 100%;
   max-width: 100vw;
-  background-color: $white;
+  background-color: #fff;
   top: 0;
   left: 0;
-
-  a {
-    float: left;
-    display: block;
-    color: $black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+  justify-content: space-between;
+  align-items: center;
 }
 
-.icons-desktop {
-  display: none;
-}
-.icons-desktop a:hover {
-  color: #d9ab23;
+nav li {
+  display: flex;
 }
 
+nav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav .header-logo {
+  align-self: auto;
+  justify-self: start;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav .header-logo img {
+  width: 160px;
+  height: auto;
+}
+fieldset {
+  border: none;
+}
+.ads {
+  height: 300px;
+}
+.ads img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.close-box {
+  width: 24px;
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 .topnav a:not(:first-child) {
   display: none;
 }
+
 .topnav a.icon {
   float: right;
   display: block;
@@ -78,6 +92,7 @@ nav {
   right: 0;
   top: 0;
 }
+
 .topnav.responsive a {
   float: none;
   display: block;
@@ -86,10 +101,9 @@ nav {
 
 #icon-wrapper {
   float: right;
-
-  a {
-    display: inline;
-  }
+}
+#icon-wrapper a {
+  display: inline;
 }
 
 a {
@@ -99,10 +113,12 @@ a {
 main {
   max-width: 1600px;
   margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 footer {
-  background-color: $dark-green;
+  background-color: #447019;
   width: 100%;
   min-height: 100px;
 }
@@ -119,66 +135,108 @@ section {
 }
 
 article {
-  background-color: $dirty-white;
-  margin: 1.5rem 0.5rem;
+  background-color: #f2efeb;
+  margin: 1rem 0.5rem;
 }
 
 #search {
   width: 100%;
   padding: 0.5rem;
-  font-family: $open-sans;
+  font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1.5rem 0;
 }
+.search_area {
+  max-width: 450px;
+  min-width: 300px;
+  width: 50%;
+  margin: 8rem auto 0;
+}
 
+#search.search-fav {
+  margin-bottom: 0.2rem;
+}
+.popup-window {
+  padding: 1.9rem 0.8rem 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #ffff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.popup-window--background {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.609);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.shown {
+  display: flex;
+  flex-direction: column;
+}
+.popup-window form label {
+  margin-top: 1rem;
+}
 h1 {
-  font-family: $montserrat;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-top: 2px solid $white;
+  border-top: 2px solid #fff;
   text-align: center;
   padding: 5px 0;
 }
 
 h2 {
-  font-family: $montserrat;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-bottom: 2px solid $black;
-  border-top: 2px solid $black;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
   text-align: center;
   padding: 5px 0;
 }
-h4 {
-  font-family: $montserrat;
-  color: #447019;
-}
+
 h3 {
   padding-top: 0.5rem;
 }
 
-aside {
-  h3 {
-    margin: 1rem;
-  }
+.not-a-member {
+  text-align: center;
+}
+aside h3 {
+  margin: 1rem;
 }
 
 .aside-item {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin: 1rem;
-
-  img {
-    max-height: 80px;
-  }
-
-  .aside-text {
-    max-width: 100%;
-    padding: 0.4rem;
-
-    p {
-      font-size: 0.9rem;
-    }
-  }
+  width: 60%;
+  display: flex;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aside-item img {
+  width: 100%;
+  min-width: 170px;
+  max-width: 170px;
+  max-height: 80%;
+}
+.aside-item .aside-text {
+  width: 100%;
+  max-width: 150px;
+  padding: 0.2rem 0.2rem 0.2rem 0.8rem;
+}
+.aside-item .aside-text p {
+  font-size: 0.9rem;
 }
 
 .page-breadcrumbs {
@@ -211,7 +269,7 @@ aside {
 
 .border-container {
   padding: 1rem;
-  border: 2px solid $white;
+  border: 2px solid #fff;
   max-width: 400px;
   max-height: 200px;
   margin: 0 1rem;
@@ -226,21 +284,19 @@ aside {
 }
 
 .recipe-details-container {
-  margin: 1rem 0;
   padding: 1rem;
-  background-color: $dirty-white;
+  background-color: #f2efeb;
 }
 
 .details-container {
   padding: 0.7rem;
-
-  p {
-    font-size: 0.9rem;
-  }
+}
+.details-container p {
+  font-size: 0.9rem;
 }
 
 .details-title {
-  font-family: $montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -264,29 +320,26 @@ aside {
   justify-content: center;
   text-align: center;
   margin: 1.5rem 0 0 0;
-  border-top: 2px solid $white;
-
-  p {
-    border-right: 2px solid $white;
-    padding: 1rem 0;
-  }
-
-  p:last-of-type {
-    border: 0px;
-  }
-
-  span {
-    display: block;
-  }
+  border-top: 2px solid #fff;
+}
+.details-box-container p {
+  border-right: 2px solid #fff;
+  padding: 1rem 0;
+}
+.details-box-container p:last-of-type {
+  border: 0px;
+}
+.details-box-container span {
+  display: block;
 }
 
 .recipe-details-button {
   width: 100%;
   padding: 1rem 0;
-  font-family: $montserrat;
-  background-color: $dark-grey;
+  font-family: "Montserrat", sans-serif;
+  background-color: #2a2a2a;
   text-transform: uppercase;
-  color: $white;
+  color: #fff;
 }
 
 i {
@@ -294,7 +347,6 @@ i {
   width: 15px;
 }
 
-// Slideshow styling for the header
 .slideshow-container {
   position: relative;
   margin: auto;
@@ -302,13 +354,12 @@ i {
 
 .mySlides {
   display: none;
-  height: 5s0vh;
+  height: 40vh;
 }
 
 .mySlides:first-of-type {
   background-image: url("../photos/header1.jpeg");
   background-size: cover;
-  background-position: right;
 }
 
 .mySlides:nth-of-type(2) {
@@ -317,7 +368,7 @@ i {
 }
 
 .mySlides:nth-of-type(3) {
-  background-image: url("../photos/header3.png");
+  background-image: url("../photos/header3.jpeg");
   background-size: cover;
 }
 
@@ -363,7 +414,6 @@ i {
     opacity: 1;
   }
 }
-
 .one-item {
   display: inline;
 }
@@ -371,8 +421,6 @@ i {
 .checkbox-wrapper {
   padding: 0.5rem 0;
 }
-
-// Signup page
 
 #signup-subpage {
   height: 100vh;
@@ -385,96 +433,106 @@ i {
   background-image: url("../photos/signup.jpg");
   background-size: cover;
   margin: 0;
-
-  h1 {
-    color: $white;
-    border: none;
-  }
-
-  #form-wrapper {
-    background-color: transparent;
-    margin: 0 auto;
-    position: relative;
-    top: 10%;
-    max-width: 300px;
-  }
-
-  input {
-    display: block;
-    margin: 0.5rem auto;
-    width: 100%;
-    padding: 0.5rem;
-    border: 2px solid $black;
-    font-family: $open-sans;
-  }
-
-  button {
-    width: 100%;
-    padding: 1rem 0;
-    font-family: $montserrat;
-    text-transform: uppercase;
-    background-color: $medium-green;
-    font-weight: 600;
-  }
-
-  .log-in {
-    color: white;
-    font-weight: 600;
-    text-shadow: 2px 2px 0 $black, 2px -2px 0 $black, -2px 2px 0 $black,
-      -2px -2px 0 $black, 2px 0px 0 $black, 0px 2px 0 $black, -2px 0px 0 $black,
-      0px -2px 0 $black, 0px 0px 10px rgba(0, 0, 0, 0);
-  }
+}
+#signup-wrapper h1 {
+  color: #000;
+  border: none;
+}
+#signup-wrapper #form-wrapper {
+  /* background-color: transparent; */
+  margin: 0 auto;
+  position: relative;
+  padding: 15px 20px 20px;
+  border-radius: 20px;
+  top: 30%;
+  max-width: 300px;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+}
+#signup-wrapper input,
+.reset-password_input {
+  display: block;
+  margin: 0 0 1rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #000000;
+  font-family: "Open Sans", sans-serif;
+}
+#signup-wrapper input:nth-child(4) {
+  margin-bottom: 0;
+}
+#signup-wrapper button,
+.reset-password_btn {
+  width: 95%;
+  margin: 1.2rem auto 0;
+  padding: 1rem 0;
+  margin-top: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #a5d145;
+  font-weight: 600;
+}
+#signup-wrapper .log-in {
+  color: #000;
+  font-weight: 600;
+  /* text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
+    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0); */
 }
 
-// Settings page
-
-#settings-headings {
-  a {
-    display: block;
-    color: $black;
-    font-family: $montserrat;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-top: 2px solid $black;
-    text-align: center;
-    padding: 5px 0;
-    margin: 0 1rem;
-  }
-
-  a:last-of-type {
-    border-bottom: 2px solid $black;
-  }
+#settings-headings a {
+  display: block;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-top: 2px solid #000000;
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 1rem;
+}
+#settings-headings a:last-of-type {
+  border-bottom: 2px solid #000000;
 }
 
 .settings {
   padding: 2rem;
   max-width: 700px;
   margin: auto;
-  input {
-    display: block;
-    margin: 0.5rem auto;
-    width: 100%;
-    padding: 0.5rem;
-    border: 2px solid $black;
-    font-family: $open-sans;
-  }
-
-  button {
-    width: 100%;
-    padding: 1rem 0;
-    font-family: $montserrat;
-    text-transform: uppercase;
-    background-color: $medium-green;
-    font-weight: 600;
-  }
-
-  form {
-    max-width: 400px;
-    margin: auto;
-  }
+}
+.settings input {
+  display: block;
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #000000;
+  font-family: "Open Sans", sans-serif;
+}
+.settings button {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #a5d145;
+  font-weight: 600;
+}
+.settings form {
+  max-width: 400px;
+  margin: auto;
 }
 
-// Media queries
+form {
+  display: contents;
+}
+.li-item {
+  display: none;
+}
+
+.nav-link {
+  display: block !important;
+  padding: 14px 10px;
+}
 
 @media screen and (min-width: 720px) {
   #home-page main,
@@ -500,13 +558,10 @@ i {
     float: none;
     display: inline;
   }
-  .topnav#navigation a:hover {
-    color: #a5d145;
-  }
 
   /* label {
-      color: #fff;
-    } */
+    color: #fff;
+  } */
   .nav-link {
     display: none;
 
@@ -548,6 +603,9 @@ i {
   #signup-wrapper #form-wrapper {
     max-width: 450px;
     width: 40%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
   }
   #signup-wrapper .log-in {
     text-shadow: none;

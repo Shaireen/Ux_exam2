@@ -7,10 +7,10 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-    margin: 0 auto 0;
-    padding: 0 15px;
-    width: 100%;
-    max-width: 1290px;
+  margin: 0 auto 0;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1290px;
 }
 
 header {
@@ -69,12 +69,12 @@ nav .header-logo img {
   height: auto;
 }
 .header-stuff {
-	float: right;
-    width: 100%;
-    text-align: right;
-    margin-top: 30px;
-    margin-bottom: 0;
-    height: 105px;
+  float: right;
+  width: 100%;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 0;
+  height: 105px;
 }
 .header {
   margin-bottom: 0;
@@ -155,11 +155,11 @@ article {
   padding: 0.5rem;
   font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1.5rem 0;
-  border: 2px solid #2A2A2A;
+  border: 2px solid #2a2a2a;
 }
 #search:focus {
   outline: none;
-	border: 2px solid #D9AB23;
+  border: 2px solid #d9ab23;
 }
 .search_area {
   max-width: 450px;
@@ -538,13 +538,13 @@ i {
   padding: 14px 10px;
 }
 .header-logo-desktop {
-  display: none!important;
+  display: none !important;
 }
-.icons-desktop{
+.icons-desktop {
   display: none;
 }
-.icons-desktop a:hover{
-  color: #D9AB23;
+.icons-desktop a:hover {
+  color: #d9ab23;
   cursor: pointer;
 }
 
@@ -572,17 +572,18 @@ i {
     float: none;
     display: inline;
   }
-  .topnav#navigation a:hover{
-    color: #A5D145;
-}
+  .topnav#navigation a:hover {
+    color: #a5d145;
+  }
   .header-logo-desktop {
-    display: none!important;
+    display: none !important;
   }
   .mySlides:first-of-type {
     background-image: url("../photos/header1.jpeg");
     background-size: cover;
-    background-position: right;}
-  .header-desktop{
+    background-position: right;
+  }
+  .header-desktop {
     display: none;
   }
   /* label {
@@ -607,18 +608,16 @@ i {
     width: 100%;
     margin: 1rem;
   }
- .header-logo-desktop {
+  .header-logo-desktop {
     display: hidden;
   }
-
 }
-@media screen and (min-width: 393px){
-.header-logo-desktop {
-    display: hidden!important;
+@media screen and (min-width: 393px) {
+  .header-logo-desktop {
+    display: hidden !important;
   }
 }
 @media screen and (min-width: 1048px) {
-
   #signup-subpage {
     max-height: 100vh;
   }
@@ -650,28 +649,28 @@ i {
   .aside-item img {
     max-height: 180px;
   }
-.header-logo-desktop {
-    display: hidden!important;
+  .header-logo-desktop {
+    display: hidden !important;
   }
 }
 @media screen and (min-width: 1320px) {
   aside {
     padding-top: 2rem;
   }
-.header-logo-desktop {
-  display: block!important;
-  overflow: hidden;
-  margin: 15px 0 5px;
-  width: 275px;
+  .header-logo-desktop {
+    display: block !important;
+    overflow: hidden;
+    margin: 15px 0 5px;
+    width: 275px;
   }
-  #navigation img{
+  #navigation img {
     display: none;
   }
   #settings-subpage footer {
     position: fixed;
     bottom: 0;
   }
-  #icon-wrapper{
+  #icon-wrapper {
     display: none;
   }
   .topnav {
@@ -679,23 +678,22 @@ i {
     /* text-align: center; */
     justify-content: center;
   }
-  .topnav a{
+  .topnav a {
     margin: 7px 60px 7px 0px;
     padding: 0 0 3px;
     position: relative;
   }
-  .header-desktop{
+  .header-desktop {
     display: flex;
     justify-content: space-between;
   }
-  .icons-desktop{
+  .icons-desktop {
     margin-top: 25px;
     display: flex;
   }
-  .icons-desktop a{
+  .icons-desktop a {
     padding: 10px;
     font-size: 25px;
-    
   }
 }
 
