@@ -5,12 +5,15 @@
   padding: 0;
 }
 
+a {
+  color: #2A2A2A;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto 0;
   padding: 0 15px;
   width: 100%;
-  max-width: 1290px;
 }
 
 header {
@@ -38,10 +41,6 @@ nav {
   align-items: center;
 }
 
-nav li {
-  display: flex;
-}
-
 nav a {
   float: left;
   display: block;
@@ -52,22 +51,29 @@ nav a {
   font-size: 17px;
 }
 
+section .margin h4 {
+  margin: 2rem 0 0 0;
+}
+
 nav .header-logo {
   align-self: auto;
   justify-self: start;
   display: flex;
   justify-content: flex-start;
 }
+
 .logo {
   overflow: hidden;
   margin: 15px 0 5px;
   width: 454px;
   float: left;
 }
+
 nav .header-logo img {
   width: 160px;
   height: auto;
 }
+
 .header-stuff {
   float: right;
   width: 100%;
@@ -76,20 +82,42 @@ nav .header-logo img {
   margin-bottom: 0;
   height: 105px;
 }
+
 .header {
   margin-bottom: 0;
   height: 105px;
 }
-fieldset {
-  border: none;
+
+nav {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #000000;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  max-width: 100vw;
+  background-color: #fff;
+  top: 0;
+  left: 0;
 }
-.ads {
-  height: 300px;
+nav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.ads img {
-  object-fit: cover;
-  height: 100%;
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
+
 .topnav a:not(:first-child) {
   display: none;
 }
@@ -115,6 +143,7 @@ fieldset {
 #icon-wrapper {
   float: right;
 }
+
 #icon-wrapper a {
   display: inline;
 }
@@ -134,20 +163,25 @@ footer {
   min-height: 100px;
 }
 
-section {
-  margin: 1rem;
-}
-
-.item-container,
-.container-wrapper {
+.item-container, .container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin: 0;
 }
 
+#creeate-reecipie .item-container, .container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+}
+
 article {
-  background-color: #f2efeb;
-  margin: 1rem 0.5rem;
+  background-color: #fff;
+  margin: 1.5rem 0.5rem;
+}
+
+.add-more {
+  float: right;
+  color: #447019;
 }
 
 #search {
@@ -155,12 +189,20 @@ article {
   padding: 0.5rem;
   font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1.5rem 0;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #2A2A2A;
 }
+
+.search-section {
+  display: grid;
+  justify-content: center;
+  background-color: #D9AB23;
+}
+
 #search:focus {
   outline: none;
-  border: 2px solid #d9ab23;
+  border: 2px solid #D9AB23;
 }
+
 .search_area {
   max-width: 450px;
   min-width: 300px;
@@ -171,37 +213,13 @@ article {
 #search.search-fav {
   margin-bottom: 0.2rem;
 }
-.popup-window {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 300px;
-  height: 300px;
-  background-color: #ffff;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-.popup-window--background {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.609);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-.shown {
-  display: block !important;
-}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   border-top: 2px solid #fff;
   text-align: center;
-  padding: 5px 0;
 }
 
 h2 {
@@ -214,44 +232,40 @@ h2 {
   padding: 5px 0;
 }
 
-h3 {
-  padding-top: 0.5rem;
-}
 h4 {
   font-family: "Montserrat", sans-serif;
-  color: #447019;
+  color: #fff;
+  font-weight: 100;
+  font-size: large;
 }
 
 aside h3 {
   margin: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .aside-item {
-  width: 60%;
-  display: flex;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 .aside-item img {
-  width: 100%;
-  min-width: 170px;
-  max-width: 170px;
-  max-height: 80%;
+  max-height: 80px;
 }
 .aside-item .aside-text {
-  width: 100%;
-  max-width: 150px;
-  padding: 0.2rem 0.2rem 0.2rem 0.8rem;
+  max-width: 100%;
+  padding: 0.4rem;
 }
 .aside-item .aside-text p {
   font-size: 0.9rem;
 }
 
 .page-breadcrumbs {
-  font-size: 0.9rem;
-  padding: 0.5rem 0;
+  font-family: "Montserrat", sans-serif;
+  color: #2A2A2A;
+  font-family: "Montserrat", sans-serif;
+  color: #2A2A2A;
+  font-size: small;
+  padding-top: 1rem;
 }
 
 .one-recipe {
@@ -261,6 +275,10 @@ aside h3 {
 .meal-photo {
   max-width: 100%;
   height: auto;
+}
+
+#create-recipe-subpage .meal-photo {
+  width: 50%;
 }
 
 .header-photo {
@@ -279,10 +297,41 @@ aside h3 {
 
 .border-container {
   padding: 1rem;
-  border: 2px solid #fff;
+  border: 2px solid #f1f1f1;
   max-width: 400px;
   max-height: 200px;
   margin: 0 1rem;
+}
+
+.recipe-details-wrapper input {
+  width: 30px;
+}
+
+#create-recipe-subpage .border-container {
+  border: none;
+}
+
+.recipe-details-container h1 {
+  padding: 0 0 45px 0px;
+}
+
+.details-title input {
+  width: 205px;
+}
+
+.edit-container {
+  margin: 0 49px 0 49px;
+}
+
+.titles {
+  width: 100%;
+  display: flex;
+  display: contents;
+}
+
+.titles h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #2A2A2A;
 }
 
 .recipe-details-wrapper {
@@ -293,9 +342,14 @@ aside h3 {
   padding: 0.2rem 0;
 }
 
+#recipe-subpage main {
+  background-color: #f1f1f1;
+}
+
 .recipe-details-container {
+  margin: 1rem 0;
   padding: 1rem;
-  background-color: #f2efeb;
+  background-color: #f1f1f1;
 }
 
 .details-container {
@@ -307,16 +361,19 @@ aside h3 {
 
 .details-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  align-self: center;
+  color: #2A2A2A;
+  font-size: smaller;
+  width: 100%;
+}
+
+.details-link {
+  color: #447019 !important;
+  text-align: right;
 }
 
 .details-title2 {
   font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
   align-self: center;
 }
 
@@ -347,9 +404,23 @@ aside h3 {
   width: 100%;
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #2a2a2a;
+  background-color: #2A2A2A;
   text-transform: uppercase;
   color: #fff;
+}
+
+.secondary-button {
+  width: 25%;
+  /* height: 2rem; */
+  font-size: smaller;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #2A2A2A;
+  /* padding: 81px; */
+  background-color: #fff;
+  border-radius: 3px;
+  border: solid #2A2A2A;
+  padding: 3px 3px;
 }
 
 i {
@@ -384,8 +455,7 @@ i {
   background-size: cover;
 }
 
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -407,8 +477,7 @@ i {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -447,45 +516,44 @@ i {
   margin: 0;
 }
 #signup-wrapper h1 {
-  color: #000;
+  color: #fff;
   border: none;
 }
 #signup-wrapper #form-wrapper {
-  /* background-color: transparent; */
+  background-color: transparent;
   margin: 0 auto;
   position: relative;
-  padding: 15px 20px 20px;
-  border-radius: 20px;
   top: 10%;
   max-width: 300px;
-  background-color: #ffff;
 }
 #signup-wrapper input {
   display: block;
-  margin: 0 0 1rem 0;
+  margin: 0.5rem auto;
   width: 100%;
   padding: 0.5rem;
   border: 2px solid #000000;
   font-family: "Open Sans", sans-serif;
 }
-#signup-wrapper input:nth-child(4) {
-  margin-bottom: 0;
-}
 #signup-wrapper button {
   width: 100%;
   padding: 1rem 0;
-  margin-top: 1.2rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #a5d145;
+  background-color: #A5D145;
   font-weight: 600;
+}
+#signup-wrapper .secondary-button {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #2A2A2A;
+  text-transform: uppercase;
+  color: #fff;
 }
 #signup-wrapper .log-in {
   color: white;
   font-weight: 600;
-  /* text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
-    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0); */
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
 }
 
 #settings-headings a {
@@ -521,7 +589,7 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #a5d145;
+  background-color: #A5D145;
   font-weight: 600;
 }
 .settings form {
@@ -529,92 +597,91 @@ i {
   margin: auto;
 }
 
-.li-item {
-  display: none;
+.logo {
+  overflow: hidden;
+  margin: 15px 0 5px;
+  width: 454px;
+  float: left;
 }
 
-.nav-link {
-  display: block !important;
-  padding: 14px 10px;
-}
 .header-logo-desktop {
   display: none !important;
 }
+
 .icons-desktop {
   display: none;
 }
-.icons-desktop a:hover {
-  color: #d9ab23;
+
+.icons-desktop a {
+  color: #2A2A2A;
   cursor: pointer;
 }
 
-@media screen and (min-width: 720px) {
-  #home-page main,
-  #fav-page main {
-    display: grid;
-    grid-template-columns: none;
-  }
-  .recipe-subpage main {
-    display: grid;
-    grid-template-columns: 30% 68%;
-    margin-top: 5rem;
-    justify-content: space-between;
-  }
-  .li-item {
-    display: flex;
-  }
+.icons-desktop a:hover {
+  color: #A5D145;
+  cursor: pointer;
+}
 
-  .topnav {
-    padding: 17px 0;
-  }
+#navigation .topnav {
+  padding: 17px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  .topnav#navigation a {
-    float: none;
-    display: inline;
-  }
-  .topnav#navigation a:hover {
-    color: #a5d145;
-  }
+@media screen and (min-width: 370px) {
   .header-logo-desktop {
     display: none !important;
   }
+
+  .li-item {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 720px) {
+  .recipe-subpage main {
+    display: grid;
+    grid-template-columns: 30% 68%;
+    justify-content: space-between;
+  }
+
+  .topnav#navigation a:hover {
+    color: #A5D145;
+  }
+
+  .header-logo-desktop {
+    display: none !important;
+  }
+
   .mySlides:first-of-type {
     background-image: url("../photos/header1.jpeg");
     background-size: cover;
     background-position: right;
   }
+
   .header-desktop {
     display: none;
   }
+
   /* label {
     color: #fff;
   } */
   .nav-link {
-    display: none;
-
     float: none;
     display: inline;
   }
 
-  .topnav#navigation a.icon {
-    display: none;
+  li .li-item {
+    display: hidden !important;
   }
 
   #settings-wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
   }
+
   .aside-item {
     width: 100%;
-    margin: 1rem;
-  }
-  .header-logo-desktop {
-    display: hidden;
-  }
-}
-@media screen and (min-width: 393px) {
-  .header-logo-desktop {
-    display: hidden !important;
   }
 }
 @media screen and (min-width: 1048px) {
@@ -622,79 +689,105 @@ i {
     max-height: 100vh;
   }
 
+  li .li-item {
+    display: flex !important;
+  }
+
   #signup-wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     background: transparent;
   }
+
   #signup-wrapper h1 {
     color: #000000;
   }
+
   #signup-wrapper #image-wrapper {
     background-image: url("../photos/signup.jpg");
     background-size: cover;
     margin: 0;
   }
+
   #signup-wrapper #form-wrapper {
     max-width: 450px;
     width: 40%;
   }
+
   #signup-wrapper .log-in {
     text-shadow: none;
     color: black;
   }
+
   .aside-item {
     flex-wrap: nowrap;
   }
+
   .aside-item img {
     max-height: 180px;
   }
+
   .header-logo-desktop {
     display: hidden !important;
   }
 }
 @media screen and (min-width: 1320px) {
-  aside {
-    padding-top: 2rem;
-  }
   .header-logo-desktop {
     display: block !important;
     overflow: hidden;
     margin: 15px 0 5px;
     width: 275px;
   }
+
   #navigation img {
     display: none;
   }
+
+  .li-item {
+    display: flex !important;
+  }
+
   #settings-subpage footer {
     position: fixed;
     bottom: 0;
   }
+
   #icon-wrapper {
     display: none;
   }
+
   .topnav {
     padding: 17px 0;
-    /* text-align: center; */
+    text-align: center;
     justify-content: center;
   }
+
   .topnav a {
     margin: 7px 60px 7px 0px;
     padding: 0 0 3px;
     position: relative;
   }
+
   .header-desktop {
     display: flex;
     justify-content: space-between;
   }
+
   .icons-desktop {
     margin-top: 25px;
     display: flex;
   }
+
   .icons-desktop a {
     padding: 10px;
     font-size: 25px;
   }
+
+  .aside-item .aside-text {
+    max-width: 100%;
+    padding: 0.4rem 1rem 0 79px;
+  }
 }
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
