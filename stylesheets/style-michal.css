@@ -139,6 +139,14 @@ article {
   margin: 1rem 0.5rem;
 }
 
+.slideshow-container-fav {
+  position: relative;
+  margin: auto;
+}
+
+.content-fav {
+  margin-top: 3.5rem;
+}
 #search {
   width: 100%;
   padding: 0.5rem;
@@ -481,13 +489,20 @@ i {
     -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0); */
 }
 
+#settings-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+}
 #settings-headings a {
   display: block;
   color: #000000;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-top: 2px solid #000000;
+  border-top: 1px solid #000000;
   text-align: center;
   padding: 5px 0;
   margin: 0 1rem;
