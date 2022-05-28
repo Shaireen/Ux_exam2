@@ -7,24 +7,56 @@
     <title>Recipe</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
     <script src="https://kit.fontawesome.com/3ff77e86fd.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../photos/icons/favicon.png">
 </head>
-<body class="recipe-subpage">
+<body id="recipe-subpage" class="recipe-subpage">
     <header>
+        <section class="header-desktop">
+            <a href="../index.html"><img class="header-logo-desktop" src="../photos/logo.png" alt="meal-morale-logo"></a>
+            <div class="icons-desktop">
+                  <a href="/subpages/favourite.html" class="fas fa-heart"></a>
+                  <a href="/subpages/login.html" class="fas fa-user"></a>
+                </a>
+              </div>
+        </section>
+
         <nav id="navigation" class="topnav">
-            <a href="">Home</a>
-            <a href="">Option 3</a>
-            <a href="">Option 2</a>
-            <a href="">Option 1</a>
-            <div id="icon-wrapper">
+          <a class="header-logo" href="../index.html"><img src="../photos/logo.png" alt="meal-morale-logo"></a>
+          <li class="li-item">
+              <ul>
+                  
+                  <a class="nav-link" href="">Home</a>
+              </ul>
+              <ul>
+                  <a class="nav-link" href="/subpages/recipe.html">My recipies</a>
+                  
+              </ul>
+              <ul>
+                  
+                  <a class="nav-link" href="">Option 2</a>
+              </ul>
+              <ul>
+                  
+                  <a class="nav-link" href="">Option 1</a>
+              </ul>
+          </li>
+          <div id="icon-wrapper">
             <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                <i class="fa fa-bars"></i>
-                <a class="fas fa-heart"></a>
-				<a class="fas fa-user"></a>
-              </a>
-            </div>
+              <i class="fa fa-bars"></i>
+              <a class="fas fa-heart"></a>
+              <a class="fas fa-user"></a>
+            </a>
+          </div>
         </nav>
-    </header>
+
+          <section class="search-section">
+            <div class="margin"><h4>What are we cooking today?</h4></div>
+            <input type="text" id="search" placeholder="Search..">
+
+        </section>
+      </header>
     <main>
+
         <aside>
             <h3>Recently visited</h3>
             <article class="aside-item">
@@ -51,10 +83,9 @@
         </aside>
         <div>
         <article class="one-recipe">
-            <div class="page-breadcrumbs" >
-                <p>page > page > page > recipe</p>
+            <div class="page-breadcrumbs margin">
+                <h3>page &gt; page &gt; page &gt; recipe</h3>
             </div>
-            
             <section class="recipe-details-container">
                 <h1>A pizza</h1>
                 <div class="container-wrapper">
@@ -62,44 +93,44 @@
                     <img src="../photos/pizza.jpeg" class="meal-photo">
                 </div>
                 <div class="border-container">
-                    <p class="recipe-details-wrapper"><span class="details-title2">Prep.time: </span><span class="details-text">30min</span></p>
-                    <p class="recipe-details-wrapper"><span class="details-title2">Cooking: </span><span class="details-text">1hr</span></p>
-                    <p class="recipe-details-wrapper"><span class="details-title2">Additional: </span><span class="details-text">20min</span></p>
-                    <p class="recipe-details-wrapper"><span class="details-title2">Servings: </span><span class="details-text">8</span></p>
-                    <p class="recipe-details-wrapper"><span class="details-title2">Cost: </span><span class="details-text">30$</span></p>
+                    <p class="recipe-details-wrapper"><span class="details-title">Prep.time: </span><span class="details-text">30min</span></p>
+                    <p class="recipe-details-wrapper"><span class="details-title">Cooking: </span><span class="details-text">1hr</span></p>
+                    <p class="recipe-details-wrapper"><span class="details-title">Additional: </span><span class="details-text">20min</span></p>
+                    <p class="recipe-details-wrapper"><span class="details-title">Servings: </span><span class="details-text">8</span></p>
+                    <p class="recipe-details-wrapper"><span class="details-title">Cost: </span><span class="details-text">30$</span></p>
                 </div>
             </div>
             </section>
             <div class="container-wrapper">
-            <section class="recipe-details-container">
+            <section class="recipe-details-container details-title">
                 <h3>Ingredients</h3>
-                <ul>
-                <p class="checkbox-wrapper">
+                <ul class=" margin-top">
+                <p >
                 <input type="checkbox" class="checkbox">
                 <span class="one-item">2 tomatoes</span>
                 </p>
-                <p class="checkbox-wrapper">
+                <p>
                 <input type="checkbox" class="checkbox">
                 <span class="one-item">1 cup of flour</span>
                 </p>
-                <p class="checkbox-wrapper">
+                <p>
                 <input type="checkbox" class="checkbox">
                 <span class="one-item">1 can of tomato sauce</span>
                 </p>
-                <p class="checkbox-wrapper">
+                <p>
                 <input type="checkbox" class="checkbox">
                 <span class="one-item">5 basil leaves</span>
                 </p>
             </ul>
             </section>
-            <section class="recipe-details-container">
+            <section class="recipe-details-container details-title">
                 <h3>Preparation</h3>
                 <li>
-                    <ol></ol>
-                    <ol></ol>
-                    <ol></ol>
-                    <ol></ol>
-                    <ol></ol>
+                    <ol>First do this...</ol>
+                    <ol>Then do this..</ol>
+                    <ol>Put it in the fridge for 50min</ol>
+                    <ol>decorate blabla..</ol>
+                    <ol>and now enjoy it with your family and friends!</ol>
                 </li>
             </section>
         </div>
