@@ -48,25 +48,12 @@
             </a>
           </div>
         </nav>
-        <div class="slideshow-container">
 
-            <div class="mySlides fade">
-            </div>
-          
-            <div class="mySlides fade">
-            </div>
-          
-            <div class="mySlides fade">
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <section>
+          <section class="search-section">
             <div class="margin"><h4>What are we cooking today?</h4></div>
             <input type="text" id="search" placeholder="Search..">
-            <section>
+
+        </section>
       </header>
       
     <main>
@@ -81,14 +68,14 @@
                 </div>
             </article>
             <article class="aside-item">
-                <img src="../photos/pizza.jpeg">
+                <img src="../photos/2.jpeg">
                 <div class="aside-text"> 
                     <h4>A recipe</h4>
                     <p>Try out this recipe now this is very cool and stuff</p>
                 </div>
             </article>
             <article class="aside-item">
-                <img src="../photos/pizza.jpeg">
+                <img src="../photos/3.jpeg">
                 <div class="aside-text"> 
                     <h4>A recipe</h4>
                     <p>Try out this recipe now this is very cool and stuff</p>
@@ -104,21 +91,10 @@
                 
                 <h1>Create a recipe</h1>
                 <div class="container-wrapper">
-                <div class="recipe-photos">
-                    <img src="../photos/pizza.jpeg" class="meal-photo">
+                <div class="recipe-details-container">
+                    <img src="../photos/4.jpeg" class="meal-photo"><br>
+                    <button type="submit" class="secondary-button"><a class="fas fa-plus" href="#" aria-hidden="true"></a>Add more</button>
                 </div>
-                <div class="container-edit margin">
-                    <h4 class="recipe-details-wrapper details-title"><span class="details-title">Name of the plate</span></br>
-                    <input type="text" placeholder="Pizza a la carbonara"></h4>
-                    <p class="recipe-details-wrapper details-title2"><span class="details-title2">Prep.time: </span><input type="text" placeholder="30">min</p>
-                    <p class="recipe-details-wrapper details-title2"><span class="details-title2">Cooking: </span><input type="text" placeholder="1">hr</p>
-                    <p class="recipe-details-wrapper details-title2"><span class="details-title2">Additional: </span><input type="text" placeholder="30">min</p>
-                    <p class="recipe-details-wrapper details-title2"><span class="details-title2">Servings: </span><input type="text" placeholder="30">portions</p>
-                    <p class="recipe-details-wrapper details-title2"><span class="details-title2">Cost: </span><input type="text" placeholder="30">$</p>
-                </div>
-            </div>
-            </section>
-            <div class="container-wrapper">
                 <form class="recipe-details-container">
                     <div>
                         <label class="details-title"for="fname">Prep time</label><br>
@@ -143,6 +119,57 @@
                         <input type="text" placeholder="amount">
                         <label class="details-title"for="fname">plates</label><br>
                     </div>                    
+                  </form>
+            </div>
+            </section>
+            <div class="container-wrapper">
+                <form class="recipe-details-container">
+                    <div>
+                        <label class="details-title">Ingredient</label><br>
+                        <input type="text" placeholder="Ingredient">
+                        <input type="text" placeholder="Amount">
+                        <select name="Mesure">
+                            <option>Cups</option>
+                            <option>Kg</option>
+                            <option>Liters</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label class="details-title">Ingredient</label><br>
+                        <input type="text" placeholder="Ingredient">
+                        <input type="text" placeholder="Amount">
+                        <select name="Mesure">
+                            <option>Cups</option>
+                            <option>Kg</option>
+                            <option>Liters</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label class="details-title">Ingredient</label><br>
+                        <input type="text" placeholder="Ingredient">
+                        <input type="text" placeholder="Amount">
+                        <select name="Mesure">
+                            <option>Cups</option>
+                            <option>Kg</option>
+                            <option>Liters</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label class="details-title">Ingredient</label><br>
+                        <input type="text" placeholder="Ingredient">
+                        <input type="text" placeholder="Amount">
+                        <select name="Mesure">
+                            <option>Cups</option>
+                            <option>Kg</option>
+                            <option>Liters</option>
+                          </select>
+                          
+                    </div>
+                    <div class="margin-top">
+                        <button type="submit" class="secondary-button"><a class="fas fa-plus" href="#" aria-hidden="true"></a>Add more</button>
+                    </div>
+                    
+
                   </form>
                   <form class="recipe-details-container">
                     <div>
@@ -186,7 +213,7 @@
                           </select>
                           
                     </div>
-                    <div class="margin">
+                    <div class="margin-top">
                         <button type="submit" class="secondary-button"><a class="fas fa-plus" href="#" aria-hidden="true"></a>Add more</button>
                     </div>
                     
