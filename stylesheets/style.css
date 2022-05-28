@@ -6,7 +6,15 @@
 }
 
 a {
-  color: #2a2a2a;
+  color: #2A2A2A;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.margin-top {
+  margin-top: 1rem;
 }
 
 body {
@@ -163,15 +171,13 @@ footer {
   min-height: 100px;
 }
 
-.item-container,
-.container-wrapper {
+.item-container, .container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin: 0;
 }
 
-#creeate-reecipie .item-container,
-.container-wrapper {
+#creeate-reecipie .item-container, .container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
 }
@@ -191,18 +197,18 @@ article {
   padding: 0.5rem;
   font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1.5rem 0;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #2A2A2A;
 }
 
 .search-section {
   display: grid;
   justify-content: center;
-  background-color: #d9ab23;
+  background-color: #D9AB23;
 }
 
 #search:focus {
   outline: none;
-  border: 2px solid #d9ab23;
+  border: 2px solid #D9AB23;
 }
 
 .search_area {
@@ -220,7 +226,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   text-align: center;
 }
 
@@ -263,9 +269,9 @@ aside h3 {
 
 .page-breadcrumbs {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #2A2A2A;
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #2A2A2A;
   font-size: small;
   padding-top: 1rem;
 }
@@ -317,10 +323,6 @@ aside h3 {
   padding: 0 0 45px 0px;
 }
 
-.details-title input {
-  width: 205px;
-}
-
 .edit-container {
   margin: 0 49px 0 49px;
 }
@@ -333,7 +335,7 @@ aside h3 {
 
 .titles h3 {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #2A2A2A;
 }
 
 .recipe-details-wrapper {
@@ -363,7 +365,7 @@ aside h3 {
 
 .details-title {
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #2A2A2A;
   font-size: smaller;
   width: 100%;
 }
@@ -381,6 +383,7 @@ aside h3 {
 
 .details-text {
   font-weight: 600;
+  font-family: "Open Sans", sans-serif;
 }
 
 .details-box-container {
@@ -406,7 +409,7 @@ aside h3 {
   width: 100%;
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #2a2a2a;
+  background-color: #2A2A2A;
   text-transform: uppercase;
   color: #fff;
 }
@@ -417,11 +420,11 @@ aside h3 {
   font-size: smaller;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  color: #2a2a2a;
+  color: #2A2A2A;
   /* padding: 81px; */
   background-color: #fff;
   border-radius: 3px;
-  border: solid #2a2a2a;
+  border: solid #2A2A2A;
   padding: 3px 3px;
 }
 
@@ -457,8 +460,7 @@ i {
   background-size: cover;
 }
 
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -480,8 +482,7 @@ i {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -501,10 +502,6 @@ i {
 }
 .one-item {
   display: inline;
-}
-
-.checkbox-wrapper {
-  padding: 0.5rem 0;
 }
 
 #signup-subpage {
@@ -543,30 +540,23 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #a5d145;
+  background-color: #A5D145;
   font-weight: 600;
 }
 #signup-wrapper .secondary-button {
   width: 100%;
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #2a2a2a;
+  background-color: #2A2A2A;
   text-transform: uppercase;
   color: #fff;
 }
 #signup-wrapper .log-in {
   color: white;
   font-weight: 600;
-  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
-    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
 }
-#settings-headings {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 1.3rem;
-}
+
 #settings-headings a {
   display: block;
   color: #000000;
@@ -600,7 +590,7 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #a5d145;
+  background-color: #A5D145;
   font-weight: 600;
 }
 .settings form {
@@ -624,12 +614,12 @@ i {
 }
 
 .icons-desktop a {
-  color: #2a2a2a;
+  color: #2A2A2A;
   cursor: pointer;
 }
 
 .icons-desktop a:hover {
-  color: #a5d145;
+  color: #A5D145;
   cursor: pointer;
 }
 
@@ -657,7 +647,7 @@ i {
   }
 
   .topnav#navigation a:hover {
-    color: #a5d145;
+    color: #A5D145;
   }
 
   .header-logo-desktop {
