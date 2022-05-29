@@ -35,6 +35,7 @@ header {
 
 nav {
   display: flex;
+  position: fixed;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -51,6 +52,7 @@ nav {
   left: 0;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 nav a {
@@ -124,6 +126,21 @@ nav a {
   text-decoration: none;
   font-size: 17px;
 }
+nav li {
+  list-style-type: none;
+}
+
+.header-logo-desktop {
+  display: none;
+}
+
+.link-wrapper {
+  display: none;
+}
+
+.footer-basic ul {
+  flex-flow: column-reverse;
+}
 
 p {
   font-family: "Open Sans", sans-serif;
@@ -140,14 +157,26 @@ p {
 }
 
 .topnav.responsive #icon-wrapper {
-  padding: 14px 16px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 8px;
 }
 
-.topnav.responsive a {
-  float: none;
+.topnav.responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: inline;
+  z-index: 10;
+}
+.topnav.responsive .link-wrapper {
+  display: block;
+  width: 100%;
+  align-self: flex-end;
+}
+.topnav.responsive li {
+  width: 100vw;
+  float: left;
   display: block;
   text-align: left;
 }
@@ -263,7 +292,7 @@ article {
   margin: 1.5rem 0.5rem;
 }
 
-.dirty-article {
+.recipe-container {
   background-color: #f1f1f1;
 }
 
@@ -283,7 +312,7 @@ article {
 .search-section {
   display: grid;
   justify-content: center;
-  background-color: #D9AB23;
+  background-color: #f1f1f1;
 }
 
 #search:focus {
@@ -322,7 +351,7 @@ h2 {
 
 h4 {
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #000000;
   font-weight: 100;
   font-size: large;
 }
@@ -538,6 +567,7 @@ i {
 .slideshow-container {
   position: relative;
   margin: auto;
+  margin-top: 67px;
 }
 
 .mySlides {
@@ -732,19 +762,6 @@ i {
   width: 100%;
 }
 
-@media screen and (min-width: 370px) {
-  .header-logo-desktop {
-    display: none !important;
-  }
-
-  .li-item {
-    display: none !important;
-  }
-
-  .footer-basic ul {
-    flex-flow: column-reverse;
-  }
-}
 @media screen and (min-width: 720px) {
   .recipe-subpage main {
     display: grid;
@@ -768,14 +785,6 @@ i {
 
   .header-desktop {
     display: none;
-  }
-
-  /* label {
-    color: #fff;
-  } */
-  .nav-link {
-    float: none;
-    display: inline;
   }
 
   li .li-item {
@@ -867,11 +876,17 @@ i {
     bottom: 0;
   }
 
+  .link-wrapper {
+    display: flex;
+  }
+
   #icon-wrapper {
     display: none;
   }
 
   .topnav {
+    display: flex;
+    position: static;
     padding: 17px 0;
     text-align: center;
     justify-content: center;
@@ -881,6 +896,10 @@ i {
     margin: 7px 60px 7px 0px;
     padding: 0 0 3px;
     position: relative;
+  }
+
+  .slideshow-container {
+    margin-top: 0;
   }
 
   .header-desktop {
