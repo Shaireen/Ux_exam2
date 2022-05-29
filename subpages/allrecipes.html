@@ -10,28 +10,53 @@
 </head>
 <body>
     <header>
-        <article class="ad">
-            <img src="../photos/header2.jpg" class="ad-photo">
-        </article>
-        <nav id="navigation" class="topnav">
-            <a href="">Home</a>
-            <a href="">Option 3</a>
-            <a href="">Option 2</a>
-            <a href="">Option 1</a>
-            <div id="icon-wrapper">
-                <a class="fas fa-heart"></a>
-				<a class="fa-solid fa-user"></a>
-                <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-            </div>
+        <section class="header-desktop">
+            <a href="../index.html"><img class="header-logo-desktop" src="../photos/logo.png" alt="meal-morale-logo"></a>
+            <div class="icons-desktop">
+                <a href="/subpages/create-recipe.html" class="fas fa-plus"></a>
+                  <a href="/subpages/favourite.html" class="fas fa-heart"></a>
+                  <a href="/subpages/login.html" class="fas fa-user"></a>
+                </a>
+              </div>
+        </section>
 
+        <nav id="navigation" class="topnav">
+          <a class="header-logo" href="../index.html"><img src="../photos/logo.png" alt="meal-morale-logo"></a>
+          <li class="li-item">
+            <ul>
+                
+                <a class="nav-link" href="">Option 1</a>
+            </ul>
+            <ul>
+                <a class="nav-link" href="">Option 2</a>
+                
+            </ul>
+            <ul>
+                
+                <a class="nav-link" href="">Option 3</a>
+            </ul>
+            <ul>
+                
+                <a class="nav-link" href="">Option 4</a>
+            </ul>
+        </li>
+          <div id="icon-wrapper">
+            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+              <i class="fa fa-bars"></i>
+              <a class="fas fa-heart"></a>
+              <a class="fas fa-user"></a>
+            </a>
+          </div>
         </nav>
-    </header>
+
+          <section class="search-section">
+            <div class="margin"><h4>What are we cooking today?</h4></div>
+            <input type="text" id="search" placeholder="Search..">
+
+        </section>
+      </header>
     <main>
         <section>
-            <h4>What are you cooking today?</h4>
-        <input type="text" id="search" placeholder="Search..">
         <h2>Filters</h2>
         <div class="item-container">
             <div>
@@ -133,7 +158,7 @@
         <section>
             <section class="item-container">
             <article>
-                <img src="../photos/pizza.jpeg" class="meal-photo">
+                <img src="../photos/2.jpeg" class="meal-photo">
                 <div class="details-container">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -156,31 +181,7 @@
                 <button class="recipe-details-button">Read more</button>
             </article>
             <article>
-                <img src="../photos/pizza.jpeg" class="meal-photo">
-                <div class="details-container">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
-                <p>This meal is very nice. Easy to make. Cool stuff.</p>
-
-                </div>
-                <div class="details-box-container">
-                    <p><span class="details-title">Prep.time</span>
-                        <span class="details-text">60min</span>
-                    </p>
-                    <p><span class="details-title">Cost</span>
-                        <span class="details-text">30$</span></p>
-                    <p><span class="details-title">Level</span>
-                        <span class="details-text">EASY</p>
-                </div>
-                <button class="recipe-details-button">Read more</button>
-            </article>
-
-            <article>
-                <img src="../photos/pizza.jpeg" class="meal-photo">
+                <img src="../photos/3.jpeg" class="meal-photo">
                 <div class="details-container">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -204,7 +205,31 @@
             </article>
 
             <article>
-                <img src="../photos/pizza.jpeg" class="meal-photo">
+                <img src="../photos/4.jpeg" class="meal-photo">
+                <div class="details-container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <h3>Very yummy pizza</h3>
+                <p>This meal is very nice. Easy to make. Cool stuff.</p>
+
+                </div>
+                <div class="details-box-container">
+                    <p><span class="details-title">Prep.time</span>
+                        <span class="details-text">60min</span>
+                    </p>
+                    <p><span class="details-title">Cost</span>
+                        <span class="details-text">30$</span></p>
+                    <p><span class="details-title">Level</span>
+                        <span class="details-text">EASY</p>
+                </div>
+                <button class="recipe-details-button">Read more</button>
+            </article>
+
+            <article>
+                <img src="../photos/5.jpeg" class="meal-photo">
                 <div class="details-container">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -230,7 +255,7 @@
 </section>
     <section class="item-container">
     <article>
-        <img src="../photos/pizza.jpeg" class="meal-photo">
+        <img src="../photos/6.jpeg" class="meal-photo">
         <div class="details-container">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -253,7 +278,7 @@
         <button class="recipe-details-button">Read more</button>
     </article>
     <article>
-        <img src="../photos/pizza.jpeg" class="meal-photo">
+        <img src="../photos/7.jpg" class="meal-photo">
         <div class="details-container">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -277,7 +302,7 @@
     </article>
 
     <article>
-        <img src="../photos/pizza.jpeg" class="meal-photo">
+        <img src="../photos/4.jpeg" class="meal-photo">
         <div class="details-container">
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -327,7 +352,17 @@
 </section>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer-basic">
+        <div class="footer-logo"><a href="../index.html"><img src="../photos/logo-white.png" alt="meal-morale-logo"></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="../index.html">Home</a></li>
+            <li class="list-inline-item"><a href="../subpages/allrecipes.html">All recipes</a></li>
+            <li class="list-inline-item"><a href="#">Create recipe</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="social"><a href="https://www.facebook.com/"><img src="../photos/svg-icons/facebook.svg" alt="facebook-icon-black"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/"><img src="../photos/svg-icons/instagram.svg" alt="instagram-icon-black"><i class="icon ion-social-instagram"></i></a><a href="https://www.twitter.com/"><img src="../photos/svg-icons/twitter.svg" alt="twitter-icon-black"><i class="icon ion-social-twitter"></i></a><a href="https://www.youtube.com/"><img src="../photos/svg-icons/youtube.svg" alt="youtube-icon-black"><i class="icon ion-social-youtube"></i></a></div>
+        <p>Meal Morale© 2022</p>
+    </footer>
 </body>
 <script src="../javascript/nav.js"></script>
 </html>

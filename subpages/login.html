@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../stylesheets/style-michal.css" />
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/style-michal.css">
     <title>Sign up</title>
     <script
       src="https://kit.fontawesome.com/3ff77e86fd.js"
@@ -13,24 +14,36 @@
   </head>
   <body id="signup-subpage">
     <header>
+      <section class="header-desktop">
+          <a href="../index.html"><img class="header-logo-desktop" src="../photos/logo.png" alt="meal-morale-logo"></a>
+          <div class="icons-desktop">
+            <a href="/subpages/create-recipe.html" class="fas fa-plus"></a>
+                <a href="/subpages/favourite.html" class="fas fa-heart"></a>
+                <a href="/subpages/login.html" class="fas fa-user"></a>
+              </a>
+            </div>
+      </section>
+
       <nav id="navigation" class="topnav">
-        <a class="header-logo" href="../index.html"
-          ><img src="../photos/logo.png" alt="meal-morale-logo"
-        /></a>
+        <a class="header-logo" href="../index.html"><img src="../photos/logo.png" alt="meal-morale-logo"></a>
         <li class="li-item">
           <ul>
-            <a class="nav-link" href="">Home</a>
+              
+              <a class="nav-link" href="">Option 1</a>
           </ul>
           <ul>
-            <a class="nav-link" href="">Option 3</a>
+              <a class="nav-link" href="">Option 2</a>
+              
           </ul>
           <ul>
-            <a class="nav-link" href="">Option 2</a>
+              
+              <a class="nav-link" href="">Option 3</a>
           </ul>
           <ul>
-            <a class="nav-link" href="">Option 1</a>
+              
+              <a class="nav-link" href="">Option 4</a>
           </ul>
-        </li>
+      </li>
         <div id="icon-wrapper">
           <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
             <i class="fa fa-bars"></i>
@@ -53,11 +66,9 @@
           <p class="log-in">
             <a class="reset-password">Forgot the password?</a>
           </p>
-          <button class="signup-btn">Log in</button>
+          <button>Log in</button>
         </form>
-        <h3 class="not-a-member">
-          Aren't you a member yet? <a href="/subpages/signup.html">Sign up!</a>
-        </h3>
+        <p class="margin-top">Aren't you a member yet? <a href="/subpages/signup.html" class="details-link">Sign up</a></p>
       </article>
     </section>
     <div class="popup-window--background"></div>
