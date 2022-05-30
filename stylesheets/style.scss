@@ -46,15 +46,15 @@ header {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
+    border-bottom: 2px solid $dark-grey;
+    border-top: 2px solid $dark-grey;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
     /*position: fixed;*/
     width: 100%;
     max-width: 100vw;
-    background-color: #fff;
+    background-color: $white;
     top: 0;
     left: 0;
     justify-content: space-between;
@@ -109,8 +109,8 @@ nav {
     font-family: $montserrat;
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
+    border-bottom: 2px solid $black;
+    border-top: 2px solid $black;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
@@ -221,7 +221,7 @@ p{
     font-size: smaller;
   }
   .footer-basic {
-    color: #ffff;
+    color: $white;
   }
   
   .footer-logo {
@@ -317,7 +317,11 @@ article {
   }
   #search:focus {
     outline: none;
-      border: 2px solid #D9AB23;
+      border: 2px solid $yellow;
+  }
+  #signup-wrapper input:target{
+      outline: none;
+        border: 2px solid $yellow;
   }
   .search_area {
     max-width: 450px;
@@ -388,7 +392,7 @@ aside {
     font-family: $montserrat;
     color: $dark-grey;
     font-family: "Montserrat", sans-serif;
-    color: #2A2A2A;
+    color: $dark-grey;
     font-size: small;
     padding-top: 1rem;
 }
@@ -483,7 +487,7 @@ width: 30px;
     width: 100%;
 }
 .details-link{
-  color: $dark-green!important;
+  color: $dark-green;
   font-family: $open-sans;
 }
 .details-title2 {
@@ -551,11 +555,11 @@ width: 30px;
   font-size: smaller;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  color: #2A2A2A;
+  color: $dark-grey;
   /* padding: 81px; */
-  background-color: #fff;
+  background-color: $white;
   border-radius: 3px;
-  border: solid #2A2A2A;
+  border: solid $dark-grey;
   padding: 3px 3px;
   cursor: pointer;
 }
@@ -641,7 +645,52 @@ i {
 
 // Signup page
 
-
+#signup-wrapper button {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: $medium-green;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid $dark-grey;
+}
+#signup-wrapper button,
+.reset-password_btn {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: $medium-green;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid $dark-grey;
+}
+#signup-wrapper button:hover {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: $white;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid $dark-grey;
+  cursor: pointer;
+}
+#signup-wrapper button,
+.reset-password_btn:hover {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: $white;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid $dark-grey;
+  cursor: pointer;
+}
 #signup-subpage {
     height: 100vh;
     overflow-y: hidden;
@@ -695,13 +744,14 @@ i {
       text-transform: uppercase;
       color: $white;
     }
-    
+
+    }
     .log-in {
         color: white;
         font-weight: 600;
         text-shadow: 2px 2px 0 $black, 2px -2px 0 $black, -2px 2px 0 $black, -2px -2px 0 $black, 2px 0px 0 $black, 0px 2px 0 $black, -2px 0px 0 $black, 0px -2px 0 $black, 0px 0px 10px rgba(0,0,0,0);
     }
-}
+
 
 
 // Settings page
@@ -760,7 +810,7 @@ i {
         float: left;
       }
 .header-logo-desktop {
-        display: none!important;
+        display: none;
       }
 .icons-desktop{
         display: none;
@@ -795,7 +845,7 @@ i {
       color: $medium-green;
   }
     .header-logo-desktop {
-      display: none!important;
+      display: none;
     }
     .mySlides:first-of-type {
       background-image: url("../photos/header1.jpeg");
@@ -806,7 +856,7 @@ i {
     }
 
     li .li-item{
-      display: hidden!important;
+      display: hidden;
     }
     #settings-wrapper {
       display: grid;
@@ -826,7 +876,7 @@ i {
       max-height: 100vh;
     }
     li .li-item{
-      display: flex!important;
+      display: flex;
     }
   
     #signup-wrapper {
@@ -835,7 +885,7 @@ i {
       background: transparent;
     }
     #signup-wrapper h1 {
-      color: #000000;
+      color: $dark-grey;
     }
     #signup-wrapper #image-wrapper {
       background-image: url("../photos/signup.jpg");
@@ -857,7 +907,7 @@ i {
       max-height: 180px;
     }
   .header-logo-desktop {
-      display: hidden!important;
+      display: hidden;
     }
     .footer-basic ul {
       flex-flow: wrap;}
@@ -865,7 +915,7 @@ i {
   @media screen and (min-width: 1320px) {
 
   .header-logo-desktop {
-    display: block!important;
+    display: block;
     overflow: hidden;
     margin: 15px 0 5px;
     width: 275px;
@@ -874,7 +924,7 @@ i {
       display: none;
     }
     .li-item {
-      display: flex !important;
+      display: flex;
   }
     #settings-subpage footer {
       position: fixed;

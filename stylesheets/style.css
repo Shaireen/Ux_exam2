@@ -39,8 +39,8 @@ nav {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-bottom: 2px solid #000000;
-  border-top: 2px solid #000000;
+  border-bottom: 2px solid #2A2A2A;
+  border-top: 2px solid #2A2A2A;
   text-align: center;
   font-weight: 600;
   font-size: 14px;
@@ -214,7 +214,7 @@ footer p {
 }
 
 .footer-basic {
-  color: white;
+  color: #fff;
 }
 
 .footer-logo {
@@ -316,6 +316,11 @@ article {
 }
 
 #search:focus {
+  outline: none;
+  border: 2px solid #D9AB23;
+}
+
+#signup-wrapper input:target {
   outline: none;
   border: 2px solid #D9AB23;
 }
@@ -486,7 +491,7 @@ aside h3 {
 }
 
 .details-link {
-  color: #447019 !important;
+  color: #447019;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -636,6 +641,56 @@ i {
   display: inline;
 }
 
+#signup-wrapper button {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #A5D145;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #2A2A2A;
+}
+
+#signup-wrapper button,
+.reset-password_btn {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #A5D145;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #2A2A2A;
+}
+
+#signup-wrapper button:hover {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #2A2A2A;
+  cursor: pointer;
+}
+
+#signup-wrapper button,
+.reset-password_btn:hover {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #2A2A2A;
+  cursor: pointer;
+}
+
 #signup-subpage {
   height: 100vh;
   overflow-y: hidden;
@@ -683,7 +738,8 @@ i {
   text-transform: uppercase;
   color: #fff;
 }
-#signup-wrapper .log-in {
+
+.log-in {
   color: white;
   font-weight: 600;
   text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
@@ -738,7 +794,7 @@ i {
 }
 
 .header-logo-desktop {
-  display: none !important;
+  display: none;
 }
 
 .icons-desktop {
@@ -774,7 +830,7 @@ i {
   }
 
   .header-logo-desktop {
-    display: none !important;
+    display: none;
   }
 
   .mySlides:first-of-type {
@@ -788,7 +844,7 @@ i {
   }
 
   li .li-item {
-    display: hidden !important;
+    display: hidden;
   }
 
   #settings-wrapper {
@@ -810,7 +866,7 @@ i {
   }
 
   li .li-item {
-    display: flex !important;
+    display: flex;
   }
 
   #signup-wrapper {
@@ -820,7 +876,7 @@ i {
   }
 
   #signup-wrapper h1 {
-    color: #000000;
+    color: #2A2A2A;
   }
 
   #signup-wrapper #image-wrapper {
@@ -848,7 +904,7 @@ i {
   }
 
   .header-logo-desktop {
-    display: hidden !important;
+    display: hidden;
   }
 
   .footer-basic ul {
@@ -857,7 +913,7 @@ i {
 }
 @media screen and (min-width: 1320px) {
   .header-logo-desktop {
-    display: block !important;
+    display: block;
     overflow: hidden;
     margin: 15px 0 5px;
     width: 275px;
@@ -868,7 +924,7 @@ i {
   }
 
   .li-item {
-    display: flex !important;
+    display: flex;
   }
 
   #settings-subpage footer {

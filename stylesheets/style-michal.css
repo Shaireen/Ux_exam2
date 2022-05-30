@@ -7,7 +7,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-}git 
+}
 fieldset {
   border: none;
 }
@@ -209,14 +209,6 @@ h3 {
   display: block;
 }
 
-.recipe-details-button {
-  width: 100%;
-  padding: 1rem 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: #2a2a2a;
-  text-transform: uppercase;
-  color: #fff;
-}
 
 i {
   height: 15px;
@@ -300,34 +292,15 @@ i {
   display: flex;
   flex-direction: column;
 }
-#signup-wrapper input,
-.reset-password_input {
-  display: block;
-  margin: 0 0 1rem 0;
-  width: 100%;
-  padding: 0.5rem;
-  font-family: "Open Sans", sans-serif;
-}
+
 #signup-wrapper input:nth-child(4) {
   margin-bottom: 0;
 }
-#signup-wrapper button,
-.reset-password_btn {
-  width: 95%;
-  margin: 1.2rem auto 0;
-  padding: 1rem 0;
-  margin-top: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  background-color: #a5d145;
-  font-weight: 600;
-}
+
 #signup-wrapper .log-in {
   color: #000;
   font-weight: 600;
-  /* text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
-    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0); */
+
 }
 
 #settings-headings {
@@ -383,7 +356,32 @@ form {
 .li-item {
   display: none;
 }
-
+#signup-wrapper button,
+.reset-password_btn:hover {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #020202;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+#signup-wrapper button,
+.reset-password_btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background-color: #A5D145;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #020202;
+}
 
 @media screen and (min-width: 720px) {
   #home-page main,
@@ -440,10 +438,6 @@ form {
     min-width: 350px;
     display: flex;
     flex-direction: column;
-  }
-  #signup-wrapper .log-in {
-    text-shadow: none;
-    color: black;
   }
 
 }
