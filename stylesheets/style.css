@@ -6,7 +6,7 @@
 }
 
 a {
-  color: #2A2A2A;
+  color: #2a2a2a;
 }
 
 .margin {
@@ -39,8 +39,8 @@ nav {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-bottom: 2px solid #2A2A2A;
-  border-top: 2px solid #2A2A2A;
+  border-bottom: 2px solid #2a2a2a;
+  border-top: 2px solid #2a2a2a;
   text-align: center;
   font-weight: 600;
   font-size: 14px;
@@ -199,7 +199,9 @@ p {
   right: 20px;
   z-index: 10;
   font-size: 1.5rem;
-  text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff, 0px -2px 0 #fff;
+  text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff,
+    0px -2px 0 #fff;
 }
 
 a {
@@ -289,7 +291,8 @@ footer p {
   opacity: 1.2;
 }
 
-.item-container, .container-wrapper {
+.item-container,
+.container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin: 0;
@@ -299,7 +302,8 @@ footer p {
   margin: 1rem 0;
 }
 
-#creeate-reecipie .item-container, .container-wrapper {
+#creeate-reecipie .item-container,
+.container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
 }
@@ -339,7 +343,7 @@ article {
   padding: 0.5rem;
   font-family: "Open Sans", sans-serif;
   margin: 0.5rem 0 1.5rem 0;
-  border: 2px solid #2A2A2A;
+  border: 2px solid #2a2a2a;
 }
 
 .search-section {
@@ -350,12 +354,12 @@ article {
 
 #search:focus {
   outline: none;
-  border: 2px solid #D9AB23;
+  border: 2px solid #d9ab23;
 }
 
 #signup-wrapper input:target {
   outline: none;
-  border: 2px solid #D9AB23;
+  border: 2px solid #d9ab23;
 }
 
 .search_area {
@@ -436,11 +440,19 @@ aside h3 {
   font-family: "Open Sans", sans-serif;
 }
 
+.reset-password_input {
+  display: block;
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #000000;
+  font-family: "Open Sans", sans-serif;
+}
 .page-breadcrumbs {
   font-family: "Montserrat", sans-serif;
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-family: "Montserrat", sans-serif;
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-size: small;
   padding-top: 1rem;
 }
@@ -537,7 +549,7 @@ aside h3 {
 
 .titles h3 {
   font-family: "Montserrat", sans-serif;
-  color: #2A2A2A;
+  color: #2a2a2a;
 }
 
 .recipe-details-wrapper {
@@ -548,7 +560,8 @@ aside h3 {
   padding: 0.2rem 0;
 }
 
-.recipe-details-container, .reviews-container {
+.recipe-details-container,
+.reviews-container {
   margin: 1rem 0;
   padding: 1rem;
   background-color: #f1f1f1;
@@ -559,10 +572,12 @@ aside h3 {
   padding: 1rem;
   flex-wrap: wrap;
 }
-.review .titles-wrapper, .review p {
+.review .titles-wrapper,
+.review p {
   padding: 0.5rem;
 }
-.review .titles-wrapper span, .review p span {
+.review .titles-wrapper span,
+.review p span {
   padding-right: 0.5rem;
 }
 .review img {
@@ -578,7 +593,7 @@ aside h3 {
 }
 
 .details-title {
-  color: #2A2A2A;
+  color: #2a2a2a;
   font-size: smaller;
   width: 100%;
 }
@@ -622,7 +637,7 @@ aside h3 {
   width: 100%;
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   text-transform: uppercase;
   color: #fff;
   outline: none;
@@ -636,9 +651,9 @@ aside h3 {
   font-family: "Montserrat", sans-serif;
   background-color: #fff;
   text-transform: uppercase;
-  color: #2A2A2A;
+  color: #2a2a2a;
   outline: none;
-  border: solid #2A2A2A;
+  border: solid #2a2a2a;
   cursor: pointer;
 }
 
@@ -648,11 +663,11 @@ aside h3 {
   font-size: smaller;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  color: #2A2A2A;
+  color: #2a2a2a;
   /* padding: 81px; */
   background-color: #fff;
   border-radius: 3px;
-  border: solid #2A2A2A;
+  border: solid #2a2a2a;
   padding: 3px 3px;
   cursor: pointer;
 }
@@ -690,7 +705,8 @@ i {
   background-size: cover;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -712,7 +728,8 @@ i {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -739,11 +756,11 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #A5D145;
+  background-color: #a5d145;
   font-weight: 600;
   outline: none;
   cursor: pointer;
-  border: 2px solid #2A2A2A;
+  border: 2px solid #2a2a2a;
 }
 
 #signup-wrapper button,
@@ -752,11 +769,11 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #A5D145;
+  background-color: #a5d145;
   font-weight: 600;
   outline: none;
   cursor: pointer;
-  border: 2px solid #2A2A2A;
+  border: 2px solid #2a2a2a;
 }
 
 #signup-wrapper button:hover {
@@ -767,7 +784,7 @@ i {
   background-color: #fff;
   font-weight: 600;
   outline: none;
-  border: 2px solid #2A2A2A;
+  border: 2px solid #2a2a2a;
   cursor: pointer;
 }
 
@@ -780,7 +797,7 @@ i {
   background-color: #fff;
   font-weight: 600;
   outline: none;
-  border: 2px solid #2A2A2A;
+  border: 2px solid #2a2a2a;
   cursor: pointer;
 }
 
@@ -820,14 +837,14 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #A5D145;
+  background-color: #a5d145;
   font-weight: 600;
 }
 #signup-wrapper .secondary-button {
   width: 100%;
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #2A2A2A;
+  background-color: #2a2a2a;
   text-transform: uppercase;
   color: #fff;
 }
@@ -835,7 +852,9 @@ i {
 .log-in {
   color: white;
   font-weight: 600;
-  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000,
+    -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
 }
 
 #settings-headings {
@@ -878,7 +897,7 @@ i {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  background-color: #A5D145;
+  background-color: #a5d145;
   font-weight: 600;
 }
 .settings form {
@@ -902,12 +921,12 @@ i {
 }
 
 .icons-desktop a {
-  color: #2A2A2A;
+  color: #2a2a2a;
   cursor: pointer;
 }
 
 .icons-desktop a:hover {
-  color: #A5D145;
+  color: #a5d145;
   cursor: pointer;
 }
 
@@ -919,14 +938,15 @@ i {
 }
 
 @media screen and (min-width: 720px) {
-  .recipe-subpage main, #fav-page main {
+  .recipe-subpage main,
+  #fav-page main {
     display: grid;
     grid-template-columns: 30% 68%;
     justify-content: space-between;
   }
 
   .topnav#navigation a:hover {
-    color: #A5D145;
+    color: #a5d145;
   }
 
   .header-logo-desktop {
@@ -988,7 +1008,7 @@ i {
   }
 
   #signup-wrapper h1 {
-    color: #2A2A2A;
+    color: #2a2a2a;
   }
 
   #signup-wrapper #image-wrapper {
@@ -1061,7 +1081,9 @@ i {
     position: relative;
   }
 
-  .slideshow-container, .search-section, .small-header {
+  .slideshow-container,
+  .search-section,
+  .small-header {
     margin-top: 0;
   }
 
