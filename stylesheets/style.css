@@ -84,7 +84,7 @@ nav .header-logo {
 }
 
 nav .header-logo img {
-  width: 160px;
+  width: 140px;
   height: auto;
 }
 
@@ -128,6 +128,10 @@ nav a {
 }
 nav li {
   list-style-type: none;
+}
+
+#home-page main h2 {
+  margin-top: 2rem;
 }
 
 .header-logo-desktop {
@@ -187,6 +191,15 @@ p {
 
 #icon-wrapper a {
   display: inline;
+}
+
+.recipe-favorite {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  z-index: 10;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff, 0px -2px 0 #fff;
 }
 
 a {
@@ -282,6 +295,10 @@ footer p {
   margin: 0;
 }
 
+#allrecipes-subpage h2 {
+  margin: 1rem 0;
+}
+
 #creeate-reecipie .item-container, .container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
@@ -294,6 +311,22 @@ article {
 
 .recipe-container {
   background-color: #f1f1f1;
+  position: relative;
+}
+
+.actions {
+  max-width: 400px;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.actions .border-container {
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+  margin: 0.3rem;
+  text-align: center;
 }
 
 .add-more {
@@ -340,7 +373,6 @@ h1 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-bottom: 2px solid #fff;
   text-align: center;
 }
 
@@ -354,21 +386,38 @@ h2 {
   padding: 5px 0;
 }
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+
 h4 {
   font-family: "Montserrat", sans-serif;
   color: #000000;
-  font-weight: 100;
-  font-size: large;
+  font-size: 1rem;
 }
 
+ul li {
+  list-style-type: none;
+}
+
+.small-header {
+  margin-top: 78px;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+
+aside {
+  margin-top: 1rem;
+}
 aside h3 {
-  margin: 1rem;
   font-family: "Montserrat", sans-serif;
 }
 
 .aside-item {
-  display: grid;
-  grid-template-columns: 30% 70%;
+  display: flex;
+  background-color: #f1f1f1;
 }
 .aside-item img {
   max-height: 80px;
@@ -425,10 +474,25 @@ aside h3 {
 
 .border-container {
   padding: 1rem;
-  border: 2px solid #f1f1f1;
+  border: 2px solid #fff;
   max-width: 400px;
   max-height: 200px;
   margin: 0 1rem;
+}
+
+.cook-details {
+  display: flex;
+  max-width: 400px;
+  background-color: #fff;
+  margin: 0 1rem;
+  font-size: smaller;
+}
+.cook-details img {
+  max-width: 80px;
+  height: auto;
+}
+.cook-details div {
+  margin: auto;
 }
 
 .recipe-details-wrapper input {
@@ -439,8 +503,26 @@ aside h3 {
   border: none;
 }
 
+.recipe-details-container ol li {
+  margin: 0 1rem;
+}
 .recipe-details-container h1 {
-  padding: 0 0 45px 0px;
+  padding: 1rem;
+}
+.recipe-details-container h4 {
+  padding-top: 1rem;
+  font-size: small;
+}
+.recipe-details-container #servings-number {
+  width: 50px;
+}
+.recipe-details-container .secondary-button {
+  width: 100%;
+  max-width: 200px;
+  margin-top: 1rem;
+}
+.recipe-details-container .meal-photo {
+  padding: 0 1rem;
 }
 
 .edit-container {
@@ -466,14 +548,26 @@ aside h3 {
   padding: 0.2rem 0;
 }
 
-#recipe-subpage main {
-  background-color: #f1f1f1;
-}
-
-.recipe-details-container {
+.recipe-details-container, .reviews-container {
   margin: 1rem 0;
   padding: 1rem;
   background-color: #f1f1f1;
+}
+
+.review {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.review .titles-wrapper, .review p {
+  padding: 0.5rem;
+}
+.review .titles-wrapper span, .review p span {
+  padding-right: 0.5rem;
+}
+.review img {
+  max-width: 80px;
+  height: auto;
 }
 
 .details-container {
@@ -484,7 +578,6 @@ aside h3 {
 }
 
 .details-title {
-  font-family: "Montserrat", sans-serif;
   color: #2A2A2A;
   font-size: smaller;
   width: 100%;
@@ -745,25 +838,32 @@ i {
   text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000, 0px 0px 10px rgba(0, 0, 0, 0);
 }
 
-#settings-headings a {
+#settings-headings {
+  max-width: 400px;
+  margin: 78px auto 0 auto;
+}
+#settings-headings button {
   display: block;
   color: #000000;
+  border: 2px solid #000000;
+  background-color: #f1f1f1;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  border-top: 2px solid #000000;
   text-align: center;
-  padding: 5px 0;
-  margin: 0 1rem;
-}
-#settings-headings a:last-of-type {
-  border-bottom: 2px solid #000000;
+  min-width: 200px;
+  width: 100%;
+  padding: 30px 0;
+  margin: 1rem 0;
 }
 
 .settings {
   padding: 2rem;
   max-width: 700px;
-  margin: auto;
+  background-color: transparent;
+}
+.settings h1:last-of-type {
+  margin-top: 2rem;
 }
 .settings input {
   display: block;
@@ -819,7 +919,7 @@ i {
 }
 
 @media screen and (min-width: 720px) {
-  .recipe-subpage main {
+  .recipe-subpage main, #fav-page main {
     display: grid;
     grid-template-columns: 30% 68%;
     justify-content: space-between;
@@ -850,6 +950,18 @@ i {
   #settings-wrapper {
     display: grid;
     grid-template-columns: 30% 70%;
+  }
+
+  #settings-headings {
+    margin-top: 5vh;
+  }
+
+  .settings {
+    padding-top: 5vh;
+  }
+
+  #settings-subpage {
+    min-height: 100vh;
   }
 
   .aside-item {
@@ -927,11 +1039,6 @@ i {
     display: flex;
   }
 
-  #settings-subpage footer {
-    position: fixed;
-    bottom: 0;
-  }
-
   .link-wrapper {
     display: flex;
   }
@@ -954,7 +1061,7 @@ i {
     position: relative;
   }
 
-  .slideshow-container {
+  .slideshow-container, .search-section, .small-header {
     margin-top: 0;
   }
 
@@ -975,7 +1082,7 @@ i {
 
   .aside-item .aside-text {
     max-width: 100%;
-    padding: 0.4rem 1rem 0 79px;
+    padding: 1rem;
   }
 
   .footer-basic ul {

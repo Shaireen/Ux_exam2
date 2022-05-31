@@ -88,7 +88,7 @@ section .margin h4{
     float: left;
   }
   nav .header-logo img {
-    width: 160px;
+    width: 140px;
     height: auto;
   }
   .header-stuff {
@@ -136,6 +136,13 @@ nav {
     }
 }
 
+#home-page {
+  main {
+    h2 {
+      margin-top: 2rem;
+    }
+  }
+}
 
   .header-logo-desktop {
       display: none;
@@ -196,6 +203,15 @@ p{
   }
   #icon-wrapper a {
     display: inline;
+  }
+
+  .recipe-favorite {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 10;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 0 $white, 2px -2px 0 $white, -2px 2px 0 $white, -2px -2px 0 $white, 2px 0px 0 $white, 0px 2px 0 $white, -2px 0px 0 $white, 0px -2px 0 $white;
   }
   
   a {
@@ -287,6 +303,13 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     margin: 0;
 }
+
+#allrecipes-subpage {
+h2 {
+  margin: 1rem 0;
+}
+}
+
 #creeate-reecipie .item-container, .container-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
@@ -297,7 +320,25 @@ article {
 }
 .recipe-container {
   background-color: $dirty-white;
+  position: relative;
 
+}
+
+.actions
+{
+  max-width: 400px;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .border-container {
+    background-color: $white;
+    height: 70px;
+    width: 70px;
+    margin: 0.3rem;
+     text-align: center;
+    
+  }
 }
 .add-more{
   float: right;
@@ -306,11 +347,12 @@ article {
 #search {
     width: 100%;
     padding: 0.5rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: $open-sans;
     margin: 0.5rem 0 1.5rem 0;
     border: 2px solid $dark-grey;
   }
   .search-section{
+
     display: grid;
     justify-content: center;
     background-color: $dirty-white;
@@ -338,7 +380,6 @@ h1 {
     font-family: $montserrat;
     text-transform: uppercase;
     font-weight: 600;
-    border-bottom: 2px solid $white;
     text-align: center;
 }
 
@@ -351,23 +392,41 @@ h2 {
     text-align: center;
     padding: 5px 0;
 }
+
+h3 {
+  font-family: $montserrat;
+  font-size: medium;
+}
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $montserrat;
   color: $black;
-  font-weight: 100;
-  font-size: large;
+  font-size: 1rem;
+}
+ul {
+li {
+  list-style-type: none;
+}
+
+}
+
+.small-header {
+  margin-top: 78px;
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
 }
 
 aside {
+  margin-top: 1rem;
     h3 {
-        margin: 1rem;
         font-family: $montserrat;
     }
 }
 
 .aside-item {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    background-color: $dirty-white;
+
 
     img {
         max-height: 80px;
@@ -385,7 +444,7 @@ aside {
 
 .reset-password{
   color: $dark-green;
-  cursor:pointer;
+  cursor: pointer;
   font-family: $open-sans;
 }
 .page-breadcrumbs {
@@ -424,10 +483,26 @@ aside {
 
 .border-container {
     padding: 1rem;
-    border: 2px solid $dirty-white;
+    border: 2px solid $white;
     max-width: 400px;
     max-height: 200px;
     margin: 0 1rem;
+}
+
+.cook-details {
+  display: flex;
+  max-width: 400px;
+  background-color: $white;
+  margin: 0 1rem;
+  font-size: smaller;
+  img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  div {
+    margin: auto;
+  }
 }
 
 //Recipie edit
@@ -437,8 +512,36 @@ width: 30px;
 #create-recipe-subpage .border-container{
     border: none;
 }
-.recipe-details-container h1{
-    padding: 0 0 45px 0px;
+.recipe-details-container {
+
+  ol {
+    li {
+      margin: 0 1rem;
+    }
+  }
+
+  h1{
+    padding: 1rem;
+  }
+
+  h4 {
+    padding-top: 1rem;
+    font-size: small;
+  }
+
+  #servings-number {
+    width: 50px;
+  }
+
+  .secondary-button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 1rem;
+  }
+
+  .meal-photo {
+    padding: 0 1rem;
+  }
 }
 
 
@@ -462,13 +565,31 @@ width: 30px;
     margin: auto;
     padding: 0.2rem 0;
 }
-#recipe-subpage main{
-    background-color: $dirty-white;
-}
-.recipe-details-container {
+
+
+.recipe-details-container, .reviews-container {
     margin: 1rem 0;
     padding: 1rem;
     background-color: $dirty-white;
+}
+
+.review {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  .titles-wrapper, p {
+    padding: 0.5rem;
+
+    span {
+      padding-right: 0.5rem;
+    }
+  }
+
+  img {
+    max-width: 80px;
+    height: auto;
+  }
 }
 
 .details-container {
@@ -481,7 +602,6 @@ width: 30px;
 
 
 .details-title {
-    font-family: "Montserrat", sans-serif;
     color: $dark-grey;
     font-size: smaller;
     width: 100%;
@@ -757,27 +877,40 @@ i {
 // Settings page
 
 #settings-headings {
-    a {
+
+    max-width: 400px;
+    margin: 78px auto 0 auto;
+
+    button {
         display: block;
         color: $black;
+        border: 2px solid $black;
+        background-color: $dirty-white;
         font-family: $montserrat;
         text-transform: uppercase;
         font-weight: 600;
-        border-top: 2px solid $black;
         text-align: center;
-        padding: 5px 0;
-        margin: 0 1rem;
+        min-width: 200px;
+        width: 100%;
+        padding: 30px 0;
+        margin: 1rem 0;
+
     }
 
-    a:last-of-type {
-        border-bottom: 2px solid $black;
-    }
 }
+
 
 .settings {
     padding: 2rem; 
     max-width: 700px;
-    margin: auto;
+
+    background-color: transparent;
+
+  
+    
+    h1:last-of-type {
+      margin-top: 2rem;
+    }
     input {
         display: block;
         margin: 0.5rem auto;
@@ -835,7 +968,7 @@ i {
 
 @media screen and (min-width: 720px) {
 
-    .recipe-subpage main {
+    .recipe-subpage main, #fav-page main {
       display: grid;
       grid-template-columns: 30% 68%;
       justify-content: space-between;
@@ -862,6 +995,19 @@ i {
       display: grid;
       grid-template-columns: 30% 70%;
     }
+
+    #settings-headings {
+      margin-top: 5vh;
+    }
+    .settings {
+      padding-top: 5vh;
+
+    }
+
+    #settings-subpage {
+      min-height: 100vh;
+
+   }
     .aside-item {
       width: 100%;
     }
@@ -926,10 +1072,7 @@ i {
     .li-item {
       display: flex;
   }
-    #settings-subpage footer {
-      position: fixed;
-      bottom: 0;
-    }
+  
 
     .link-wrapper {
       display: flex;
@@ -950,7 +1093,7 @@ i {
       position: relative;
     }
 
-    .slideshow-container {
+    .slideshow-container, .search-section, .small-header {
       margin-top: 0;
     }
     .header-desktop{
@@ -968,7 +1111,7 @@ i {
     }
     .aside-item .aside-text {
         max-width: 100%;
-        padding: 0.4rem 1rem 0 79px;}
+        padding: 1rem;}
 
     .footer-basic ul {
           flex-flow: wrap;}

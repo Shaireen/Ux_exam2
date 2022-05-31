@@ -14,55 +14,56 @@
   <body id="settings-subpage">
     <header>
       <section class="header-desktop">
-          <a href="../index.html"><img class="header-logo-desktop" src="../photos/logo.png" alt="meal-morale-logo"></a>
-          <div class="icons-desktop">
-            <a href="/subpages/create-recipe.html" class="fas fa-plus"></a>
-                <a href="/subpages/favourite.html" class="fas fa-heart"></a>
-                <a href="/subpages/login.html" class="fas fa-user"></a>
-              </a>
-            </div>
-      </section>
+        <a href="../index.html"><img class="header-logo-desktop" src="../photos/logo.png" alt="meal-morale-logo"></a>
+        <div class="icons-desktop">
+          <a href="create-recipe.html" class="fas fa-plus"></a>
+              <a href="favourite.html" class="fas fa-heart"></a>
+              <a href="signup.html" class="fas fa-user"></a>
+              <a href="settings.html" class="fa-solid fa-gear"></a>
+            </a>
+          </div>
+    </section>
 
-      <nav id="navigation" class="topnav">
+    <nav id="navigation" class="topnav">
         <a class="header-logo" href="../index.html"><img src="../photos/logo.png" alt="meal-morale-logo"></a>
         <ul class="link-wrapper">
             <li>
                 
-                <a class="nav-link" href="">Option 1</a>
+                <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li>
-                <a class="nav-link" href="">Option 2</a>
+                <a class="nav-link" href="allrecipes.html">All recipes</a>
                 
             </li>
             <li>
                 
-                <a class="nav-link" href="">Option 3</a>
+                <a class="nav-link">Partners</a>
             </li>
             <li>
                 
-                <a class="nav-link" href="">Option 4</a>
+                <a class="nav-link">About
+                </a>
             </li>
           </ul>
         <div id="icon-wrapper">
           <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
             <i class="fa fa-bars"></i>
-            <a class="fas fa-heart"></a>
-            <a class="fas fa-user"></a>
+            <a href="create-recipe.html" class="fas fa-plus"></a>
+            <a href="favourite.html" class="fas fa-heart"></a>
+            <a href="signup.html" class="fas fa-user"></a>
+          </a>
           </a>
         </div>
       </nav>
-        <section class="search-section">
-          <div class="margin"><h4>What are we cooking today?</h4></div>
-          <input type="text" id="search" placeholder="Search..">
-
-      </section>
+      <img src="../photos/banner3.jpg" class="small-header">
     </header>
     <main id="settings-wrapper">
       <aside id="settings-headings">
-        <a href="">General</a>
-        <a href="">Account</a>
-        <a href="">Profile</a>
-        <a href="">Privacy</a>
+      <button>General settings</button>
+      <button>Shopping lists</button>
+      <button>Your reviews</button>
+        <button>Profile</button>
+        <button>Privacy</button>
       </aside>
       <section>
         <article id="general-settings" class="settings">
@@ -81,9 +82,34 @@
             />
             <button>Confirm</button>
           </form>
+          <h1>Change your details</h1>
+          <form>
+            <input name="firstname" type="text" placeholder="First name" />
+            <input
+              name="lastname"
+              type="text"
+              placeholder="Last name"
+            />
+            <input
+              name="password"
+              type="password"
+              placeholder="Confirm with password"
+            />
+            <button>Confirm</button>
+          </form>
         </article>
       </section>
     </main>
-
+    <footer class="footer-basic">
+      <div class="footer-logo"><a href="../index.html"><img src="../photos/logo-white.png" alt="meal-morale-logo"></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="../index.html">Home</a></li>
+          <li class="list-inline-item"><a href="../subpages/allrecipes.html">All recipes</a></li>
+          <li class="list-inline-item"><a href="#">Create recipe</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <div class="social"><a href="https://www.facebook.com/"><img src="../photos/svg-icons/facebook.svg" alt="facebook-icon-black"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/"><img src="../photos/svg-icons/instagram.svg" alt="instagram-icon-black"><i class="icon ion-social-instagram"></i></a><a href="https://www.twitter.com/"><img src="../photos/svg-icons/twitter.svg" alt="twitter-icon-black"><i class="icon ion-social-twitter"></i></a><a href="https://www.youtube.com/"><img src="../photos/svg-icons/youtube.svg" alt="youtube-icon-black"><i class="icon ion-social-youtube"></i></a></div>
+      <p>Meal Morale© 2022</p>
+  </footer>
   </body>
 </html>

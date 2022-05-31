@@ -7,7 +7,6 @@
     <title>My favourites</title>
     <link rel="icon" type="image/x-icon" href="../photos/icons/favicon.png">
     <link rel="stylesheet" href="../stylesheets/style.css">
-    <link rel="stylesheet" href="../stylesheets/style-michal.css">
     <script
       src="https://kit.fontawesome.com/3ff77e86fd.js"
       crossorigin="anonymous"
@@ -18,210 +17,89 @@
         <section class="header-desktop">
             <a href="../index.html"><img class="header-logo-desktop" src="../photos/logo.png" alt="meal-morale-logo"></a>
             <div class="icons-desktop">
-                <a href="/subpages/create-recipe.html" class="fas fa-plus"></a>
-                  <a href="/subpages/favourite.html" class="fas fa-heart"></a>
-                  <a href="/subpages/login.html" class="fas fa-user"></a>
+              <a href="create-recipe.html" class="fas fa-plus"></a>
+                  <a href="favourite.html" class="fas fa-heart"></a>
+                  <a href="signup.html" class="fas fa-user"></a>
+                  <a href="settings.html" class="fa-solid fa-gear"></a>
                 </a>
               </div>
         </section>
-
+  
         <nav id="navigation" class="topnav">
             <a class="header-logo" href="../index.html"><img src="../photos/logo.png" alt="meal-morale-logo"></a>
             <ul class="link-wrapper">
                 <li>
                     
-                    <a class="nav-link" href="">Option 1</a>
+                    <a class="nav-link" href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="">Option 2</a>
+                    <a class="nav-link" href="allrecipes.html">All recipes</a>
                     
                 </li>
                 <li>
                     
-                    <a class="nav-link" href="">Option 3</a>
+                    <a class="nav-link">Partners</a>
                 </li>
                 <li>
                     
-                    <a class="nav-link" href="">Option 4</a>
+                    <a class="nav-link">About
+                    </a>
                 </li>
               </ul>
             <div id="icon-wrapper">
               <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
                 <i class="fa fa-bars"></i>
-                <a class="fas fa-heart"></a>
-                <a class="fas fa-user"></a>
+                <a href="create-recipe.html" class="fas fa-plus"></a>
+                <a href="favourite.html" class="fas fa-heart"></a>
+                <a href="signup.html" class="fas fa-user"></a>
+              </a>
               </a>
             </div>
           </nav>
-          <div id="icon-wrapper">
-            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-              <i class="fa fa-bars"></i>
-              <a class="fas fa-heart"></a>
-              <a class="fas fa-user"></a>
-            </a>
-          </div>
-        </nav>
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-            </div>
-          
-            <div class="mySlides fade">
-            </div>
-          
-            <div class="mySlides fade">
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
+          <img src="../photos/banner4.jpg" class="small-header">
+          <section class="search-section">
+            <div class="margin"><h4>What are we cooking today?</h4></div>
+            <input type="text" id="search" placeholder="Search..">
+  
+        </section>
       </header>
-    <section class="search-section">
-        <div class="margin"><h4>What are we cooking today?</h4></div>
-        <input type="text" id="search" placeholder="Search..">
-    </section>
     <main>
-        <aside class="margin-right">
-            <h3>Recently view</h3>
-            <article class="aside-item">
-                <img src="../photos/pizza.jpeg">
-                <div class="aside-text"> 
-                    <h4>A recipe</h4>
-                    <p>Try out this recipe now this is very cool and stuff</p>
-                </div>
-            </article>
+        <aside>
+            <h3>Recently visited</h3>
             <article class="aside-item">
                 <img src="../photos/2.jpeg">
                 <div class="aside-text"> 
-                    <h4>A recipe</h4>
+                    <h4>Wonderful pasta</h4>
                     <p>Try out this recipe now this is very cool and stuff</p>
                 </div>
             </article>
             <article class="aside-item">
                 <img src="../photos/3.jpeg">
                 <div class="aside-text"> 
-                    <h4>A recipe</h4>
+                    <h4>Fresh salad</h4>
+                    <p>Try out this recipe now this is very cool and stuff</p>
+                </div>
+            </article>
+            <article class="aside-item">
+                <img src="../photos/4.jpeg">
+                <div class="aside-text"> 
+                    <h4>Unforgettable rice</h4>
                     <p>Try out this recipe now this is very cool and stuff</p>
                 </div>
             </article>
         </aside>
         <section>
-        <section class="margin-top">
-            <h2>My favorites</h2>
-            <section class="item-container">
-            <article  class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
-                <div class="details-container">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
-                <p>This meal is very nice. Easy to make. Cool stuff.</p>
-
-                </div>
-                <div class="details-box-container">
-                    <p><span class="details-title">Prep.time</span>
-                        <span class="details-text">60min</span>
-                    </p>
-                    <p><span class="details-title">Cost</span>
-                        <span class="details-text">30$</span></p>
-                    <p><span class="details-title">Level</span>
-                        <span class="details-text">EASY</p>
-                </div>
-                <button class="recipe-details-button">Read more</button>
-            </article>
-            <article class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
-                <div class="details-container">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
-                <p>This meal is very nice. Easy to make. Cool stuff.</p>
-
-                </div>
-                <div class="details-box-container">
-                    <p><span class="details-title">Prep.time</span>
-                        <span class="details-text">60min</span>
-                    </p>
-                    <p><span class="details-title">Cost</span>
-                        <span class="details-text">30$</span></p>
-                    <p><span class="details-title">Level</span>
-                        <span class="details-text">EASY</p>
-                </div>
-                <button class="recipe-details-button">Read more</button>
-            </article>
-
-            <article  class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
-                <div class="details-container">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
-                <p>This meal is very nice. Easy to make. Cool stuff.</p>
-
-                </div>
-                <div class="details-box-container">
-                    <p><span class="details-title">Prep.time</span>
-                        <span class="details-text">60min</span>
-                    </p>
-                    <p><span class="details-title">Cost</span>
-                        <span class="details-text">30$</span></p>
-                    <p><span class="details-title">Level</span>
-                        <span class="details-text">EASY</p>
-                </div>
-                <button class="recipe-details-button">Read more</button>
-            </article>
-
-            <article class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
-                <div class="details-container">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
-                <p>This meal is very nice. Easy to make. Cool stuff.</p>
-
-                </div>
-                <div class="details-box-container">
-                    <p><span class="details-title">Prep.time</span>
-                        <span class="details-text">60min</span>
-                    </p>
-                    <p><span class="details-title">Cost</span>
-                        <span class="details-text">30$</span></p>
-                    <p><span class="details-title">Level</span>
-                        <span class="details-text">EASY</p>
-                </div>
-                <button class="recipe-details-button">Read more</button>
-            </article>
-
-        </section>
-        </section>
-        <section>
-
-        </section>
-        <section>
-            <h2>Category</h2>
             <section class="item-container">
             <article class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
+                <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                <img src="../photos/2.jpeg" class="meal-photo">
                 <div class="details-container">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
+                <h3>Pasta with tuna souce</h3>
                 <p>This meal is very nice. Easy to make. Cool stuff.</p>
 
                 </div>
@@ -237,14 +115,40 @@
                 <button class="recipe-details-button">Read more</button>
             </article>
             <article class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
+                <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                <img src="../photos/3.jpeg" class="meal-photo">
                 <div class="details-container">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
+                <h3>The best fesh salad</h3>
+                <p>This meal is very nice. Easy to make. Cool stuff.</p>
+
+                </div>
+                <div class="details-box-container">
+                    <p><span class="details-title">Prep.time</span>
+                        <span class="details-text">60min</span>
+                    </p>
+                    <p><span class="details-title">Cost</span>
+                        <span class="details-text">30$</span></p>
+                    <p><span class="details-title">Level</span>
+                        <span class="details-text">EASY</p>
+                </div>
+                <button class="recipe-details-button">Read more</button>
+            </article>
+
+            <article class="recipe-container"> 
+                <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                <img src="../photos/4.jpeg" class="meal-photo">
+                <div class="details-container">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <h3>Easy and perfect rice</h3>
                 <p>This meal is very nice. Easy to make. Cool stuff.</p>
 
                 </div>
@@ -261,14 +165,15 @@
             </article>
 
             <article class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
+                <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+                <img src="../photos/5.jpeg" class="meal-photo">
                 <div class="details-container">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
+                <h3>Noodles night</h3>
                 <p>This meal is very nice. Easy to make. Cool stuff.</p>
 
                 </div>
@@ -283,33 +188,110 @@
                 </div>
                 <button class="recipe-details-button">Read more</button>
             </article>
+            
+</section>
+    <section class="item-container">
+    <article class="recipe-container">
+        <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+        <img src="../photos/6.jpeg" class="meal-photo">
+        <div class="details-container">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>Grilled veggies salad</h3>
+        <p>This meal is very nice. Easy to make. Cool stuff.</p>
 
-            <article class="recipe-container">
-                <img src="../photos/pizza.jpeg" class="meal-photo">
-                <div class="details-container">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                <h3>Very yummy pizza</h3>
-                <p>This meal is very nice. Easy to make. Cool stuff.</p>
+        </div>
+        <div class="details-box-container">
+            <p><span class="details-title">Prep.time</span>
+                <span class="details-text">60min</span>
+            </p>
+            <p><span class="details-title">Cost</span>
+                <span class="details-text">30$</span></p>
+            <p><span class="details-title">Level</span>
+                <span class="details-text">EASY</p>
+        </div>
+        <button class="recipe-details-button">Read more</button>
+    </article>
+    <article class="recipe-container">
+        <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+        <img src="../photos/7.jpg" class="meal-photo">
+        <div class="details-container">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>Chicken with Helmann's</h3>
+        <p>This meal is very nice. Easy to make. Cool stuff.</p>
 
-                </div>
-                <div class="details-box-container">
-                    <p><span class="details-title">Prep.time</span>
-                        <span class="details-text">60min</span>
-                    </p>
-                    <p><span class="details-title">Cost</span>
-                        <span class="details-text">30$</span></p>
-                    <p><span class="details-title">Level</span>
-                        <span class="details-text">EASY</p>
-                </div>
-                <button class="recipe-details-button">Read more</button>
-            </article>
+        </div>
+        <div class="details-box-container">
+            <p><span class="details-title">Prep.time</span>
+                <span class="details-text">60min</span>
+            </p>
+            <p><span class="details-title">Cost</span>
+                <span class="details-text">30$</span></p>
+            <p><span class="details-title">Level</span>
+                <span class="details-text">EASY</p>
+        </div>
+        <button class="recipe-details-button">Read more</button>
+    </article>
+
+    <article class="recipe-container">
+        <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+        <img src="../photos/4.jpeg" class="meal-photo">
+        <div class="details-container">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>One more rice recipie</h3>
+        <p>This meal is very nice. Easy to make. Cool stuff.</p>
+
+        </div>
+        <div class="details-box-container">
+            <p><span class="details-title">Prep.time</span>
+                <span class="details-text">60min</span>
+            </p>
+            <p><span class="details-title">Cost</span>
+                <span class="details-text">30$</span></p>
+            <p><span class="details-title">Level</span>
+                <span class="details-text">EASY</p>
+        </div>
+        <button class="recipe-details-button">Read more</button>
+    </article>
+
+    <article class="recipe-container">
+        <div class="recipe-favorite"><i class="fa-solid fa-heart-circle-plus"></i></div>
+        <img src="../photos/pizza.jpeg" class="meal-photo">
+        <div class="details-container">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        <h3>Very yummy pizza</h3>
+        <p>This meal is very nice. Easy to make. Cool stuff.</p>
+
+        </div>
+        <div class="details-box-container">
+            <p><span class="details-title">Prep.time</span>
+                <span class="details-text">60min</span>
+            </p>
+            <p><span class="details-title">Cost</span>
+                <span class="details-text">30$</span></p>
+            <p><span class="details-title">Level</span>
+                <span class="details-text">EASY</p>
+        </div>
+        <button class="recipe-details-button">Read more</button>
+    </article>
+    
 </section>
         </section>
-    </section>
     </main>
 
         <footer class="footer-basic">
